@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrelsApp.Views.InitPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<!--<Label Text="Regístrate ahora"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="24"/>-->
+
+			<Image Source="logo.png"  HorizontalOptions="Center" WidthRequest="300"/>
+
+			<!--<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Facebook" TextColor="White" FontAttributes="Bold" FontSize="20" 
+			        HorizontalOptions="FillAndExpand" BackgroundColor="#3b5998"/>
+
+			<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Google" TextColor="White" FontAttributes="Bold" FontSize="20" 
+			        HorizontalOptions="FillAndExpand" BackgroundColor="#d34836"/>-->
+
+			<StackLayout Orientation="Horizontal" Padding="20" Spacing="30">
+
+				<Button Command="{Binding Path=SubmitCommand}" Text="Sign in" TextColor="White" FontAttributes="Bold" FontSize="20" 
+				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
+
+				<Button Command="{Binding Path=SubmitCommand}" Text="Sign up" TextColor="White" FontAttributes="Bold" FontSize="20" 
+				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
+
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

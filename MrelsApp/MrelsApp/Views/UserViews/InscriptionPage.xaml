@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrelsApp.Views.UserViews.InscriptionPage">
+    <ContentPage.Content>
+	    <!--<StackLayout Padding="24,48,24,0" Spacing="8">
+		    <Label FontSize="Medium" Text="ATHLETE STATS" TextColor="{StaticResource grayDark}" />
+		    <BoxView BackgroundColor="{StaticResource grayPrimary}" HeightRequest=".5" HorizontalOptions="FillAndExpand" />
+		    <StackLayout Orientation="Horizontal">
+			    <Label FontSize="Small" Text="Rank" TextColor="{StaticResource grayDark}" />
+			    <Label FontSize="Small" Text="{Binding Membership.RankDescription}" TextColor="{StaticResource grayDark}" HorizontalOptions="EndAndExpand" />
+		    </StackLayout>
+		    <BoxView BackgroundColor="{StaticResource grayPrimary}" HeightRequest=".5" HorizontalOptions="FillAndExpand" />
+		    <StackLayout Orientation="Horizontal">
+			    <Label FontSize="Small" Text="Rating" TextColor="{StaticResource grayDark}" />
+			    <Label FontSize="Small" Text="{Binding Membership.CurrentRating}" TextColor="{StaticResource grayDark}" HorizontalOptions="EndAndExpand" />
+		    </StackLayout>
+		    <BoxView BackgroundColor="{StaticResource grayPrimary}" HeightRequest=".5" HorizontalOptions="FillAndExpand" />
+		    <StackLayout Orientation="Horizontal">
+			    <Label FontSize="Small" Text="Stats" TextColor="{StaticResource grayDark}" />
+			    <Label FontSize="Small" Text="{Binding Stats}" TextColor="{StaticResource grayDark}" HorizontalOptions="EndAndExpand" />
+		    </StackLayout>
+		    <BoxView BackgroundColor="{StaticResource grayPrimary}" HeightRequest=".5" HorizontalOptions="FillAndExpand" />
+	    </StackLayout>-->
+
+		<ScrollView>
+			<StackLayout Padding="20" Spacing="10">
+				<Entry Placeholder="Nombre" Text="{Binding Path=UserModel.Name, Mode=TwoWay}" BackgroundColor="White"/>
+
+				<Entry Placeholder="Apellidos" Text="{Binding Path=UserModel.Surnames, Mode=TwoWay}" BackgroundColor="White"/>
+
+				<Entry Placeholder="Email" Text="{Binding Path=UserModel.Email, Mode=TwoWay}" BackgroundColor="White"/>
+
+				<Entry Placeholder="Teléfono" TextColor="{StaticResource FontColor}" Text="{Binding Path=UserModel.Phone, Mode=TwoWay}" BackgroundColor="White"/>
+
+				<Label Text="Fecha de Nacimiento"/>
+				<DatePicker BackgroundColor="White"  Date="{Binding UserModel.BirthdayDate, Mode=TwoWay}">
+					<DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+				</DatePicker>
+
+				<Entry x:Name="PasswordEntry" Text="{Binding Path=UserModel.Password}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
+
+				<Button Command="{Binding Path=SaveCommand}" Text="Guardar"/>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
