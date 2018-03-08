@@ -1,4 +1,6 @@
 FormsViewGroup
+ImageCircle.Forms.Plugin.Abstractions
+ImageCircle.Forms.Plugin.Android
 MrelsApp
 System.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable

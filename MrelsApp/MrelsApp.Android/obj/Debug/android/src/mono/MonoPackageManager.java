@@ -108,6 +108,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "MrelsApp.Android.dll" comes first in this list. */
 		"MrelsApp.Android.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.Abstractions.dll",
+		"ImageCircle.Forms.Plugin.Android.dll",
 		"MrelsApp.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",

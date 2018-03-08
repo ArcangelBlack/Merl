@@ -6,6 +6,10 @@ MrelsApp.Droid.SplashActivity, MrelsApp.Android;md53f5d5bf65b610ecef5fb3892be9eb
 MrelsApp.Droid.SplashActivity, MrelsApp.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53f5d5bf65b610ecef5fb3892be9eb6b0.SplashActivity
 MrelsApp.Droid.SplashActivity;md53f5d5bf65b610ecef5fb3892be9eb6b0.SplashActivity
 mrelsapp.droid.SplashActivity;md53f5d5bf65b610ecef5fb3892be9eb6b0.SplashActivity
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5979977b59766b06d26cb3e819c6ba31c.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null;md5979977b59766b06d26cb3e819c6ba31c.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5979977b59766b06d26cb3e819c6ba31c.ImageCircleRenderer
+imagecircle.forms.plugin.droid.ImageCircleRenderer;md5979977b59766b06d26cb3e819c6ba31c.ImageCircleRenderer
 Android.Support.V4.Widget.SearchViewCompat/IOnCloseListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat+IOnCloseListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat.IOnCloseListenerImplementor;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor

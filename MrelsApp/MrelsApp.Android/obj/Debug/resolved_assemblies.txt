@@ -1,5 +1,7 @@
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\MrelsApp.Android.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Abstractions.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\MrelsApp.dll
