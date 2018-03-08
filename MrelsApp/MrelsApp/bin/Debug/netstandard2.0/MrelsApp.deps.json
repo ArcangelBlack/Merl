@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "b27794e5b5b5f10aba0a2076d6ffd15280883abb"
+    "signature": "e9026528bfef3cb825bb041dc1ca0ffdc2ff8c30"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
       "MrelsApp/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.1",
+          "Xam.Plugins.Forms.ImageCircle": "2.0.2",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "runtime": {
@@ -20,6 +21,15 @@
       "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/2.0.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1",
+          "Xamarin.Forms": "2.5.0.122203"
+        },
+        "runtime": {
+          "lib/netstandard1.0/ImageCircle.Forms.Plugin.Abstractions.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -50,6 +60,13 @@
       "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "path": "netstandard.library/2.0.1",
       "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+    },
+    "Xam.Plugins.Forms.ImageCircle/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LyLQE2Pn9hHFKURhCCs5Z+5nb5KALmzQPUySeCi7AmCBbs0UkXQ48PSre8Nf4SbXSvASe8ewycD++xeqaeufJw==",
+      "path": "xam.plugins.forms.imagecircle/2.0.2",
+      "hashPath": "xam.plugins.forms.imagecircle.2.0.2.nupkg.sha512"
     },
     "Xamarin.Forms/2.5.0.122203": {
       "type": "package",

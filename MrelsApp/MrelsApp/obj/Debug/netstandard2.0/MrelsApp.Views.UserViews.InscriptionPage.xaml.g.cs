@@ -11,8 +11,8 @@
 namespace MrelsApp.Views.UserViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\MrelsApp\\MrelsApp\\Mre" +
-        "lsApp\\Views\\UserViews\\InscriptionPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\AppMobile\\MrelsApp\\Mr" +
+        "elsApp\\Views\\UserViews\\InscriptionPage.xaml")]
     public partial class InscriptionPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

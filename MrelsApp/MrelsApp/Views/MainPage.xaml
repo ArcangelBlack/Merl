@@ -32,18 +32,7 @@
 			</x:Arguments>
 		</NavigationPage>
 
-		<NavigationPage Title="3">
-			<NavigationPage.Icon>
-				<OnPlatform x:TypeArguments="FileImageSource">
-					<On Platform="iOS" Value="tab_feed.png"/>
-				</OnPlatform>
-			</NavigationPage.Icon>
-			<x:Arguments>
-				<userviews:InscriptionPage />
-			</x:Arguments>
-		</NavigationPage>
-
-		<NavigationPage Title="4">
+		<!--<NavigationPage Title="4">
 		    <NavigationPage.Icon>
 			    <OnPlatform x:TypeArguments="FileImageSource">
 				    <On Platform="iOS" Value="tab_feed.png"/>
@@ -52,9 +41,9 @@
 		    <x:Arguments>
 				<conditionviews:ConditionTestPage />
 		    </x:Arguments>
-	    </NavigationPage>
+	    </NavigationPage>-->
 		
-		<!--<NavigationPage Title="4">
+		<NavigationPage Title="4">
 		    <NavigationPage.Icon>
 			    <OnPlatform x:TypeArguments="FileImageSource">
 				    <On Platform="iOS" Value="tab_feed.png"/>
@@ -63,10 +52,20 @@
 		    <x:Arguments>
 			    <userviews:UserPage />
 		    </x:Arguments>
-	    </NavigationPage>-->
+	    </NavigationPage>
 
 		<!--Video-->
-	    <NavigationPage Title="5">
+		<NavigationPage Title="9">
+			<NavigationPage.Icon>
+				<OnPlatform x:TypeArguments="FileImageSource">
+					<On Platform="iOS" Value="tab_feed.png"/>
+				</OnPlatform>
+			</NavigationPage.Icon>
+			<x:Arguments>
+				<workviews:WorkoutOverviewPage />
+			</x:Arguments>
+		</NavigationPage>
+		<!--<NavigationPage Title="5">
 		    <NavigationPage.Icon>
 			    <OnPlatform x:TypeArguments="FileImageSource">
 				    <On Platform="iOS" Value="tab_about.png"/>
@@ -75,7 +74,7 @@
 		    <x:Arguments>
 				<workviews:VideoPage />
 		    </x:Arguments>
-	    </NavigationPage>
+	    </NavigationPage>-->
 
 		<NavigationPage Title="6">
 			<NavigationPage.Icon>
@@ -124,16 +123,7 @@
             </x:Arguments>
         </NavigationPage>-->
 		
-	    <NavigationPage Title="9">
-		    <NavigationPage.Icon>
-			    <OnPlatform x:TypeArguments="FileImageSource">
-				    <On Platform="iOS" Value="tab_feed.png"/>
-			    </OnPlatform>
-		    </NavigationPage.Icon>
-		    <x:Arguments>
-			    <views:ItemsPage />
-		    </x:Arguments>
-	    </NavigationPage>
+
 		
     </TabbedPage.Children>
 </TabbedPage>

@@ -3,18 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MrelsApp.Views.InitPage">
 	<ContentPage.Content>
-		<StackLayout>
-			<!--<Label Text="Regístrate ahora"
+		<Grid RowSpacing="0" ColumnSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<Image
+				x:Name="HeroImage"
+				Grid.ColumnSpan="2"
+				
+				Aspect="AspectFill"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions ="FillAndExpand"/>
+			<Button 
+				x:Name="ButtonFindStore"
+				Grid.Row="1"
+				BackgroundColor="#3498DB"
+				BorderRadius="0"
+				TextColor="White" 
+				Text="Sign in"/>
+			<Button 
+				x:Name="ButtonLeaveFeedback"
+				Grid.Row="1"
+				Grid.Column="1"
+				BackgroundColor="#81C134" 
+				BorderRadius="0"
+				TextColor="White"
+				Text="Sign up"/>
+		</Grid>
+		<!--<StackLayout>
+			--><!--<Label Text="Regístrate ahora"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="24"/>-->
+                HorizontalOptions="CenterAndExpand" FontSize="24"/>--><!--
 
 			<Image Source="logo.png"  HorizontalOptions="Center" WidthRequest="300"/>
 
-			<!--<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Facebook" TextColor="White" FontAttributes="Bold" FontSize="20" 
+			--><!--<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Facebook" TextColor="White" FontAttributes="Bold" FontSize="20" 
 			        HorizontalOptions="FillAndExpand" BackgroundColor="#3b5998"/>
 
 			<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Google" TextColor="White" FontAttributes="Bold" FontSize="20" 
-			        HorizontalOptions="FillAndExpand" BackgroundColor="#d34836"/>-->
+			        HorizontalOptions="FillAndExpand" BackgroundColor="#d34836"/>--><!--
 
 			<StackLayout Orientation="Horizontal" Padding="20" Spacing="30">
 
@@ -25,6 +58,6 @@
 				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
 
 			</StackLayout>
-		</StackLayout>
+		</StackLayout>-->
 	</ContentPage.Content>
 </ContentPage>

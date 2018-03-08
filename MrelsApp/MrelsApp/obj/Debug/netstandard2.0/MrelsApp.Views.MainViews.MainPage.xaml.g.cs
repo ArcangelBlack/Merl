@@ -11,8 +11,8 @@
 namespace MrelsApp.Views.MainViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\MrelsApp\\MrelsApp\\Mre" +
-        "lsApp\\Views\\MainViews\\MainPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\AppMobile\\MrelsApp\\Mr" +
+        "elsApp\\Views\\MainViews\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

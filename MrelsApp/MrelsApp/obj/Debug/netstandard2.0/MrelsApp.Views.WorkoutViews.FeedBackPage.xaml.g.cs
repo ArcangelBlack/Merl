@@ -11,8 +11,8 @@
 namespace MrelsApp.Views.WorkoutViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\MrelsApp\\MrelsApp\\Mre" +
-        "lsApp\\Views\\WorkoutViews\\FeedBackPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\ccumpa\\Documents\\Personales\\Proyectos\\Mrels\\srcApp\\AppMobile\\MrelsApp\\Mr" +
+        "elsApp\\Views\\WorkoutViews\\FeedBackPage.xaml")]
     public partial class FeedBackPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

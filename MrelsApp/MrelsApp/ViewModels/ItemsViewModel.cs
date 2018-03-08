@@ -17,7 +17,7 @@ namespace MrelsApp.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Program";
+            Title = "Workout Overview";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

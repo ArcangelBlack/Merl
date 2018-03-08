@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.2" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
 
@@ -12,11 +13,13 @@
     <Compile Update="Views\AboutPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ItemDetailPage.xaml.cs">
+    <Compile Update="Views\WorkoutViews\WorkoutDetailPage.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>WorkoutDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ItemsPage.xaml.cs">
+    <Compile Update="Views\WorkoutViews\WorkoutOverviewPage.xaml.cs">
       <SubType>Code</SubType>
+      <DependentUpon>WorkoutOverviewPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\MainPage.xaml.cs">
       <SubType>Code</SubType>
@@ -27,6 +30,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="CustomControls\ConnectSocialButtonControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CustomControls\StrengthIndicatorsControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\CalendarPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -52,9 +61,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SplashPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\UserViews\InscriptionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\UserViews\UserPage.xaml">
