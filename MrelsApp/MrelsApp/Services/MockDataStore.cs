@@ -64,5 +64,15 @@ namespace MrelsApp.Services
         {
             return await Task.FromResult(items);
         }
+
+        public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Response> Put<T>(string urlBase, string servicePrefix, string controller, T model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

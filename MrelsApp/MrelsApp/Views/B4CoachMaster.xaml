@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="MrelsApp.Views.B4CoachMaster"
+	xmlns:workviews="clr-namespace:MrelsApp.Views.WorkoutViews"
+	xmlns:pages="clr-namespace:MrelsApp.Views">
+  <MasterDetailPage.Master>
+    <pages:B4CoachMasterMaster x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <!--<pages:B4CoachMasterDetail />-->
+		<workviews:WorkoutOverviewPage />
+	</x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
