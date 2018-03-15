@@ -82,8 +82,4 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModels\UserViewModels\" />
-  </ItemGroup>
-
 </Project>

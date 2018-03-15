@@ -2,6 +2,7 @@
 using MrelsApp.Services;
 using MrelsApp.Utils;
 using MrelsApp.ViewModels.WorkoutViewModels;
+using MrelsApp.Views;
 using MrelsApp.Views.WorkoutViews;
 using Xamarin.Forms;
 
@@ -77,10 +78,10 @@ namespace MrelsApp.ViewModels.MainViewModels
 
             //Crear una sola instancia
             //MainViewModel.GetInstanceMainViewModel().WorkoutOverviewVm = new WorkoutOverviewViewModel();
-            var mainViewModel = MainViewModel.GetInstanceMainViewModel();
-            mainViewModel.WorkoutOverviewVm = new WorkoutOverviewViewModel();
+            //var mainViewModel = MainViewModel.GetInstanceMainViewModel();
+            //mainViewModel.WorkoutOverviewVm = new WorkoutOverviewViewModel();
 
-            await Application.Current.MainPage.Navigation.PushAsync(new WorkoutOverviewPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new B4CoachMaster());
 
         }
 

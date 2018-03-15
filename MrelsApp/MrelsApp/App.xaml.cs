@@ -1,6 +1,5 @@
-﻿using MrelsApp.Views.UserViews;
+﻿using MrelsApp.Views;
 using Xamarin.Forms;
-using LoginPage = MrelsApp.Views.MainViews.LoginPage;
 
 namespace MrelsApp
 {
@@ -11,7 +10,7 @@ namespace MrelsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());//new B4CoachMaster();
+            MainPage = new NavigationPage(new InitPage());
         }
 
         protected override void OnStart()

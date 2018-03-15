@@ -1,4 +1,5 @@
 ﻿using MrelsApp.ViewModels.MainViewModels;
+using MrelsApp.ViewModels.UserViewModels;
 using MrelsApp.ViewModels.WorkoutViewModels;
 
 namespace MrelsApp.ViewModels
@@ -8,6 +9,8 @@ namespace MrelsApp.ViewModels
         #region ViewModels
 
         public LoginViewModel LoginVm { get; set; }
+
+        public UserViewModel UserVm { get; set; }
 
         public WorkoutOverviewViewModel WorkoutOverviewVm { get; set; }
 
