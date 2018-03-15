@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
+using MrelsApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,7 +17,7 @@ namespace MrelsApp.Views
             InitializeComponent();
 
             BindingContext = new B4CoachMasterMasterViewModel();
-            ListView = MenuItemsListView;
+            ListView = MenuItemssListView;
         }
 
         class B4CoachMasterMasterViewModel : INotifyPropertyChanged

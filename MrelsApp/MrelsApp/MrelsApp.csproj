@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="8.0.3" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="2.2.12" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.2" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
@@ -42,9 +44,6 @@
     <EmbeddedResource Update="Views\B4CoachMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\B4CoachMasterDetail.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\B4CoachMasterMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -75,7 +74,7 @@
     <EmbeddedResource Update="Views\WorkoutViews\FeedBackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\WorkoutViews\VideoPage.xaml">
+    <EmbeddedResource Update="Views\WorkoutViews\SubWorkoutDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\WorkoutViews\WorkoutSummaryPage.xaml">
@@ -84,7 +83,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\WorkoutViewModels\" />
+    <Folder Include="ViewModels\UserViewModels\" />
   </ItemGroup>
 
 </Project>

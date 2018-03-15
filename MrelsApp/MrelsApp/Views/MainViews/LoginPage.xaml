@@ -1,21 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrelsApp.Views.UserViews.LoginPage">
+             x:Class="MrelsApp.Views.MainViews.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
 	<ContentPage.Content>
-		<StackLayout Orientation="Vertical" Padding="20" Spacing="30">
-			
+		<StackLayout Orientation="Vertical" Padding="20" Spacing="30"
+		    BindingContext="{Binding Path=LoginVm}">
+
 			<BoxView HeightRequest="10"/>
-			<Image Source="logo.jpeg"  HorizontalOptions="Center" WidthRequest="300"/>
-			
-			<Frame HasShadow="False">
-				<StackLayout Orientation="Vertical" Spacing="10">
-					<Entry Text="{Binding Path=Email}" Placeholder="Email" HeightRequest="40" TextColor="Black"/>
-					<Entry Text="{Binding Path=Password}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
-				</StackLayout>
-			</Frame>
-			<Button Command="{Binding Path=SubmitCommand}" Text="Login" TextColor="White" FontAttributes="Bold" FontSize="20" 
-					HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
+			<Image Source="logo.jpeg"  HorizontalOptions="Center" WidthRequest="200"/>
+
+			<StackLayout Orientation="Vertical">
+				<Entry Text="{Binding Path=Email, Mode=TwoWay}" Placeholder="Email" HeightRequest="40" TextColor="Black"/>
+				<Entry Text="{Binding Path=Password, Mode=TwoWay}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
+			</StackLayout>
+				<!--<Frame VerticalOptions="StartAndExpand">
+						<StackLayout Orientation="Vertical" Spacing="10">
+								<Entry Text="{Binding Path=Email, Mode=TwoWay}" Placeholder="Email" HeightRequest="40" TextColor="Black"/>
+								<Entry Text="{Binding Path=Password, Mode=TwoWay}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
+							</StackLayout>
+				</Frame>
+				<StackLayout Orientation="Horizontal">
+					<Label Text="Forgot your password" TextColor="Blue" HorizontalOptions="Center"/>
+				</StackLayout>-->
+		
+			<Button Command="{Binding Path=LoginCommand}" Text="Login" TextColor="White" FontAttributes="Bold" FontSize="20" 
+				HorizontalOptions="FillAndExpand" BackgroundColor="#3498DB"/>
+
+			<ActivityIndicator IsRunning="{Binding Path=IsBusy, Mode=TwoWay}" VerticalOptions="CenterAndExpand"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

@@ -5,6 +5,7 @@
             xmlns:workviews="clr-namespace:MrelsApp.Views.WorkoutViews"
             xmlns:userviews="clr-namespace:MrelsApp.Views.UserViews"
             xmlns:conditionviews="clr-namespace:MrelsApp.Views.ConditionTestViews"
+            xmlns:mainViews="clr-namespace:MrelsApp.Views.MainViews;assembly=MrelsApp"
             x:Class="MrelsApp.Views.MainPage">
 	<TabbedPage.Children>
 
@@ -28,7 +29,7 @@
 				</OnPlatform>
 			</NavigationPage.Icon>
 			<x:Arguments>
-				<userviews:LoginPage />
+				<mainViews:LoginPage />
 			</x:Arguments>
 		</NavigationPage>
 

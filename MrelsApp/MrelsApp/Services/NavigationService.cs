@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace MrelsApp.Services
 {
-    class NavigationService
+    public class NavigationService
     {
         public async Task Navigate(string pageName)
         {
@@ -21,7 +22,7 @@ namespace MrelsApp.Services
 
         public async Task Back()
         {
-            await App.Current.MainPage.Navigation.PopAsync();
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
 
     }

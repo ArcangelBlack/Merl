@@ -11,13 +11,13 @@ namespace MrelsApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public WorkoutModel Item { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Item
+            Item = new WorkoutModel
             {
                 Text = "Item name",
                 Description = "This is an item description."

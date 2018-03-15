@@ -4,7 +4,7 @@
              x:Class="MrelsApp.Views.B4CoachMasterMaster"
              Title="Master">
   <StackLayout>
-    <ListView x:Name="MenuItemsListView"
+    <ListView x:Name="MenuItemssListView"
               SeparatorVisibility="None"
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">

@@ -4,15 +4,14 @@
 	x:Class="MrelsApp.Views.B4CoachMaster"
 	xmlns:workviews="clr-namespace:MrelsApp.Views.WorkoutViews"
 	xmlns:pages="clr-namespace:MrelsApp.Views">
-  <MasterDetailPage.Master>
-    <pages:B4CoachMasterMaster x:Name="MasterPage" />
-  </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <!--<pages:B4CoachMasterDetail />-->
-		<workviews:WorkoutOverviewPage />
-	</x:Arguments>
-    </NavigationPage>
-  </MasterDetailPage.Detail>
+	<MasterDetailPage.Master>
+		<pages:B4CoachMasterMaster x:Name="MasterPage" />
+	</MasterDetailPage.Master>
+	<MasterDetailPage.Detail>
+		<NavigationPage>
+			<x:Arguments>
+				<workviews:WorkoutOverviewPage />
+			</x:Arguments>
+		</NavigationPage>
+	</MasterDetailPage.Detail>
 </MasterDetailPage>
