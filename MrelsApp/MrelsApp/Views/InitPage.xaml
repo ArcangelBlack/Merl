@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrelsApp.Views.InitPage">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MrelsApp.Views.InitPage"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}">
 	<ContentPage.Content>
-		<Grid RowSpacing="0" ColumnSpacing="0">
+		<Grid RowSpacing="0" ColumnSpacing="0" BindingContext="{Binding Path=InitVm}">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*"/>
 				<RowDefinition Height="Auto"/>
@@ -26,7 +27,8 @@
 				BackgroundColor="#3498DB"
 				BorderRadius="0"
 				TextColor="White" 
-				Text="Sign in"/>
+				Text="Sign in"
+				Command="{Binding Path=LoginCommand}"/>
 			<Button 
 				x:Name="ButtonLeaveFeedback"
 				Grid.Row="1"
@@ -34,7 +36,8 @@
 				BackgroundColor="#81C134" 
 				BorderRadius="0"
 				TextColor="White"
-				Text="Sign up"/>
+				Text="Sign up"
+				Command="{Binding Path=RegisterCommand}"/>
 		</Grid>
 		<!--<StackLayout>
 			--><!--<Label Text="Regístrate ahora"

@@ -19,7 +19,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
         private async void SelectWorkoutCommandExecute()
         {
             MainViewModel.GetInstanceMainViewModel().WorkoutOverviewDetailVm = new WorkoutOverviewDetailViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new WorkoutDetailPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new NavigationPage(new WorkoutDetailPage()));
         }
 
         #endregion

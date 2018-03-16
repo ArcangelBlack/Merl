@@ -7,7 +7,6 @@ namespace MrelsApp.Models
     {
         public B4CoachMasterMenuItem()
         {
-            //TargetType = typeof();
         }
         public int Id { get; set; }
 

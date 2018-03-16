@@ -1,8 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using MrelsApp.Models;
-using MrelsApp.ViewModels;
+﻿using MrelsApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

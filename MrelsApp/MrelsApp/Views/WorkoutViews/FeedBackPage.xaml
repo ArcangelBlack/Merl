@@ -4,10 +4,23 @@
              x:Class="MrelsApp.Views.WorkoutViews.FeedBackPage"
 			 Title="FeedBack">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+
+			<Image Source="ic_sentiment_very_satisfied"/>
+
+			<Image Grid.Row="1" Source="ic_sentiment_neutral"/>
+
+			<Image Grid.Row="2" Source="ic_sentiment_satisfied"/>
+
+			<Image Grid.Row="3" Source="ic_sentiment_very_dissatisfied"/>
+
+		</Grid>
     </ContentPage.Content>
 </ContentPage>

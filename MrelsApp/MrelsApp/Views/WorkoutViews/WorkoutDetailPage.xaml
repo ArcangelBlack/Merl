@@ -26,11 +26,12 @@
 					VerticalOptions ="CenterAndExpand"
 					BorderColor="#3498DB" 
 					BorderThickness="4">
-				<controls:CircleImage.Source>
-					<UriImageSource Uri="{Binding Path=ItemDetail.ImageUri}" 
+				<!--<controls:CircleImage.Source>
+					<UriImageSource 
+						Uri="{Binding Path=ItemDetail.ImageUri}"
 						                CacheValidity="14" 
 						                CachingEnabled="true"/>
-				</controls:CircleImage.Source>
+				</controls:CircleImage.Source>-->
 			</controls:CircleImage>
 			<Label
 					Grid.Row="1"
@@ -74,9 +75,9 @@
 									<controls:CircleImage.HeightRequest>
 										<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
 									</controls:CircleImage.HeightRequest>
-									<controls:CircleImage.Source>
+									<!--<controls:CircleImage.Source>
 										<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
-									</controls:CircleImage.Source>
+									</controls:CircleImage.Source>-->
 								</controls:CircleImage>
 								<StackLayout Grid.Column="1"
 					                         Padding="8"

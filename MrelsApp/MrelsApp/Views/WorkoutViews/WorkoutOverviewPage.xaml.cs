@@ -16,7 +16,7 @@ namespace MrelsApp.Views.WorkoutViews
         {
             InitializeComponent();
 
-           // BindingContext = viewModel = new WorkoutOverviewViewModel();
+            //BindingContext = viewModel = new WorkoutOverviewViewModel();
         }
 
         //async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -31,10 +31,10 @@ namespace MrelsApp.Views.WorkoutViews
         //    ItemsListView.SelectedItem = null;
         //}
 
-        //async void AddItem_Clicked(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-        //}
+        async void AddItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+        }
 
         //protected override void OnAppearing()
         //{

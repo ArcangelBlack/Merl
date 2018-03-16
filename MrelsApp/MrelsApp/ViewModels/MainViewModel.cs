@@ -8,6 +8,8 @@ namespace MrelsApp.ViewModels
     {
         #region ViewModels
 
+        public InitViewModel InitVm { get; set; }
+
         public LoginViewModel LoginVm { get; set; }
 
         public UserViewModel UserVm { get; set; }
@@ -25,7 +27,7 @@ namespace MrelsApp.ViewModels
         public MainViewModel()
         {
             instanceMainViewModel = this;
-            this.LoginVm = new LoginViewModel();
+            this.InitVm = new InitViewModel();
         }
 
         #endregion

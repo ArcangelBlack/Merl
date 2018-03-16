@@ -38,6 +38,9 @@
 					FontSize="Small"
 					Text="{Binding Path=ItemDetail.Description}"
 					HorizontalOptions="Center"/>
+			
+			<WebView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>
+
 		</Grid>
     </ContentPage.Content>
 </ContentPage>

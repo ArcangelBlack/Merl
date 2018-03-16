@@ -31,7 +31,6 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\MrelsApp\MrelsApp\Mr
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\bin\Debug\netstandard2.0\MrelsApp.deps.json
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\bin\Debug\netstandard2.0\MrelsApp.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\bin\Debug\netstandard2.0\MrelsApp.pdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.csprojResolveAssemblyReference.cache
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.csproj.CoreCompileInputs.cache
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.App.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.CustomControls.ConnectSocialButtonControl.xaml.g.cs
@@ -58,3 +57,9 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.AssemblyInfo.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.pdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\bin\Debug\netstandard2.0\en\MrelsApp.resources.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Resources.Resource.resources
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Resources.Resource.en.resources
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.csproj.GenerateResource.cache
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\en\MrelsApp.resources.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.HelpsViews.ConfigurationPage.xaml.g.cs
