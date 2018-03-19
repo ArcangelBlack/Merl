@@ -5,21 +5,26 @@
 			 Title="FeedBack">
     <ContentPage.Content>
         <Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
 			<Grid.RowDefinitions>
-				<RowDefinition/>
-				<RowDefinition/>
+				<RowDefinition Height="25"/>
 				<RowDefinition/>
 				<RowDefinition/>
 				<RowDefinition/>
 			</Grid.RowDefinitions>
 
-			<Image Source="ic_sentiment_very_satisfied"/>
+			<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="30" TextColor="#3498DB" Text="How was your workout?"/>
 
-			<Image Grid.Row="1" Source="ic_sentiment_neutral"/>
+			<Image Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Source="ic_sentiment_very_satisfied"/>
 
-			<Image Grid.Row="2" Source="ic_sentiment_satisfied"/>
+			<Image Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" Source="ic_sentiment_neutral"/>
 
-			<Image Grid.Row="3" Source="ic_sentiment_very_dissatisfied"/>
+			<Image Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" Source="ic_sentiment_satisfied"/>
+
+			<Image Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" Source="ic_sentiment_very_dissatisfied"/>
 
 		</Grid>
     </ContentPage.Content>

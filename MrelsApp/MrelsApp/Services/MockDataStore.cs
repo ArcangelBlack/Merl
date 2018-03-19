@@ -600,8 +600,6 @@ namespace MrelsApp.Services
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
 
-
-
         public async Task<IEnumerable<SubWorkoutModel>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
@@ -609,7 +607,71 @@ namespace MrelsApp.Services
 
         public async Task<IEnumerable<SubWorkoutModel>> GetItemsFromParentIdAsync(string parentId)
         {
-            return await Task.FromResult(items.Where(s=> s.ParentId == parentId));
+            return await Task.FromResult(items.Where(s => s.ParentId == parentId));
+        }
+
+        public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Response> Put<T>(string urlBase, string servicePrefix, string controller, T model)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class MockTrainingPLanDataStore : IDataStore<TrainingPlanModel>
+    {
+        List<TrainingPlanModel> items;
+
+        public MockTrainingPLanDataStore()
+        {
+            items = new List<TrainingPlanModel>();
+
+            var mockItems = new List<TrainingPlanModel>
+            {
+                new TrainingPlanModel { Id = Guid.NewGuid().ToString(), Description = "Perdida de peso",  NumberOfDays = 6 },
+                new TrainingPlanModel { Id = Guid.NewGuid().ToString(), Description = "Tonificación global",  NumberOfDays = 6 },
+                new TrainingPlanModel { Id = Guid.NewGuid().ToString(), Description = "Aumento de masa muscular",  NumberOfDays = 6 },
+                new TrainingPlanModel { Id = Guid.NewGuid().ToString(), Description = "Tonificacion de piernas",  NumberOfDays = 3 },
+                new TrainingPlanModel { Id = Guid.NewGuid().ToString(), Description = "Tonificación de dorso/espalda",  NumberOfDays = 3 },
+            };
+
+            foreach (var item in mockItems)
+            {
+                items.Add(item);
+            }
+        }
+
+        public Task<bool> AddItemAsync(TrainingPlanModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateItemAsync(TrainingPlanModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteItemAsync(TrainingPlanModel item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TrainingPlanModel> GetItemAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<TrainingPlanModel>> GetItemsAsync(bool forceRefresh = false)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<TrainingPlanModel>> GetItemsFromParentIdAsync(string id)
+        {
+            return await Task.FromResult(items.Where(s => s.Id == id));
         }
 
         public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)

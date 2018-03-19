@@ -43,7 +43,9 @@ namespace MrelsApp.ViewModels.MainViewModels
             set => this.SetProperty(ref this.password, value);
         }
 
-        public ICommand LoginCommand => new RelayCommand(LoginCommandExecute);
+        public ICommand LoginCommand => new RelayCommand(this.LoginCommandExecute);
+
+        public ICommand IsRemembered => new RelayCommand(this.IsRememberedCommand);
 
         #region Commands
 
@@ -77,9 +79,13 @@ namespace MrelsApp.ViewModels.MainViewModels
 
             //Crear una sola instancia
             MainViewModel.GetInstanceMainViewModel().WorkoutOverviewVm = new WorkoutOverviewViewModel();
+            MainViewModel.GetInstanceMainViewModel().B4CoachMasterMasterVm = new  B4CoachMasterMasterViewModel();
 
-            await Application.Current.MainPage.Navigation.PushAsync(new B4CoachMaster());
-
+            Application.Current.MainPage = new B4CoachMaster();
+        }
+        private void IsRememberedCommand()
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion 

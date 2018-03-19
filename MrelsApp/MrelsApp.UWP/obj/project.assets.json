@@ -273,6 +273,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -312,6 +323,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -324,6 +349,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -352,7 +388,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -636,6 +674,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -848,6 +897,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -860,6 +923,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -888,7 +962,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -1172,6 +1248,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -1385,6 +1472,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1397,6 +1498,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -1425,7 +1537,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -1709,6 +1823,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -1921,6 +2046,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1933,6 +2072,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -1961,7 +2111,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -2245,6 +2397,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -2458,6 +2621,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -2470,6 +2647,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -2498,7 +2686,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -2782,6 +2972,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -2994,6 +3195,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -3006,6 +3221,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -3034,7 +3260,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -3318,6 +3546,17 @@
           "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Permissions/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Permissions.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Permissions.dll": {}
+        }
+      },
       "Plugin.Youtube/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -3531,6 +3770,20 @@
           "lib/UAP10/Plugin.Connectivity.dll": {}
         }
       },
+      "Xam.Plugin.Media/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.Permissions": "2.2.1"
+        },
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Forms.ImageCircle/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -3543,6 +3796,17 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Forms/2.5.0.122203": {
@@ -3571,7 +3835,9 @@
           "Newtonsoft.Json": "8.0.3",
           "Plugin.Youtube": "1.0.1",
           "Xam.Plugin.Connectivity": "2.2.12",
+          "Xam.Plugin.Media": "3.1.3",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "compile": {
@@ -6171,6 +6437,41 @@
         "tools/install.ps1"
       ]
     },
+    "Plugin.Permissions/2.2.1": {
+      "sha512": "ixEdsOBokh6eIofokJmru0u18hZKUODkvJZeest0CsHiiuRcO38yiTr+2Nq6Pg9hm0fhyavFQydhbldfHOp44Q==",
+      "type": "package",
+      "path": "plugin.permissions/2.2.1",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Permissions.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Permissions.XML",
+        "lib/MonoAndroid10/Plugin.Permissions.dll",
+        "lib/MonoAndroid10/Plugin.Permissions.pdb",
+        "lib/UAP10/Plugin.Permissions.Abstractions.dll",
+        "lib/UAP10/Plugin.Permissions.Abstractions.pdb",
+        "lib/UAP10/Plugin.Permissions.Abstractions.xml",
+        "lib/UAP10/Plugin.Permissions.XML",
+        "lib/UAP10/Plugin.Permissions.dll",
+        "lib/UAP10/Plugin.Permissions.pdb",
+        "lib/UAP10/Plugin.Permissions.pri",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Permissions.XML",
+        "lib/Xamarin.iOS10/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.deps.json",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.pdb",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "plugin.permissions.2.2.1.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
+      ]
+    },
     "Plugin.Youtube/1.0.1": {
       "sha512": "8VMTe2QLC2idPVzLXXTs/T8TueWyRs7Zt4SPvhoJ1lLbCpMWmVPG5KRJ5zgeyU+ZbYjL66VH+5BzMkqXdTOgPw==",
       "type": "package",
@@ -7356,6 +7657,47 @@
         "readme.txt"
       ]
     },
+    "Xam.Plugin.Media/3.1.3": {
+      "sha512": "SI6m6PKeOZSksNp1j5fnl1ePeuLKQWMOkqy56YhCPtspfyA7N2k4lFi+2iU3TJ2YUfjWpIybTQ/1hdLKGTY6Jw==",
+      "type": "package",
+      "path": "xam.plugin.media/3.1.3",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Media.dll",
+        "lib/MonoAndroid10/Plugin.Media.pdb",
+        "lib/MonoAndroid10/Plugin.Media.xml",
+        "lib/UAP10/Plugin.Media.Abstractions.dll",
+        "lib/UAP10/Plugin.Media.Abstractions.pdb",
+        "lib/UAP10/Plugin.Media.Abstractions.xml",
+        "lib/UAP10/Plugin.Media.XML",
+        "lib/UAP10/Plugin.Media.dll",
+        "lib/UAP10/Plugin.Media.pdb",
+        "lib/UAP10/Plugin.Media.pri",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Media.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Media.deps.json",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.Abstractions.dll",
+        "lib/tizen40/Plugin.Media.Abstractions.pdb",
+        "lib/tizen40/Plugin.Media.Abstractions.xml",
+        "lib/tizen40/Plugin.Media.deps.json",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "readme.txt",
+        "xam.plugin.media.3.1.3.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xam.Plugins.Forms.ImageCircle/2.0.2": {
       "sha512": "LyLQE2Pn9hHFKURhCCs5Z+5nb5KALmzQPUySeCi7AmCBbs0UkXQ48PSre8Nf4SbXSvASe8ewycD++xeqaeufJw==",
       "type": "package",
@@ -7386,6 +7728,72 @@
         "lib/netstandard1.0/ImageCircle.Forms.Plugin.Abstractions.xml",
         "xam.plugins.forms.imagecircle.2.0.2.nupkg.sha512",
         "xam.plugins.forms.imagecircle.nuspec"
+      ]
+    },
+    "Xam.Plugins.Settings/3.1.1": {
+      "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "type": "package",
+      "path": "xam.plugins.settings/3.1.1",
+      "files": [
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.Mac20/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/netstandard1.0/Helpers/Settings.cs.pp",
+        "content/xamarintvOS/Helpers/Settings.cs.pp",
+        "content/xamarinwatchOS/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.pdb",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.XML",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.pdb",
+        "lib/UAP10/Plugin.Settings.pri",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Settings.XML",
+        "lib/Xamarin.Mac20/Plugin.Settings.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.pdb",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.XML",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Settings.deps.json",
+        "lib/netstandard1.0/Plugin.Settings.dll",
+        "lib/netstandard1.0/Plugin.Settings.xml",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarintvOS/Plugin.Settings.dll",
+        "lib/xamarintvOS/Plugin.Settings.pdb",
+        "lib/xamarintvOS/Plugin.Settings.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.xml",
+        "readme.txt",
+        "xam.plugins.settings.3.1.1.nupkg.sha512",
+        "xam.plugins.settings.nuspec"
       ]
     },
     "Xamarin.Forms/2.5.0.122203": {
@@ -7616,7 +8024,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/nuget": {}
       },
       "frameworks": {
         "uap10.0.16299": {

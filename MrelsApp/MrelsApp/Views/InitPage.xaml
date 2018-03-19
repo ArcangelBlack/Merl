@@ -17,10 +17,13 @@
 			<Image
 				x:Name="HeroImage"
 				Grid.ColumnSpan="2"
-				
+				Source="logo_bg.png"
 				Aspect="AspectFill"
-				HorizontalOptions="FillAndExpand"
-				VerticalOptions ="FillAndExpand"/>
+
+				WidthRequest="200"
+				HeightRequest="200"/>
+			<!--HorizontalOptions="FillAndExpand"
+				VerticalOptions ="FillAndExpand"-->
 			<Button 
 				x:Name="ButtonFindStore"
 				Grid.Row="1" Grid.Column="0"

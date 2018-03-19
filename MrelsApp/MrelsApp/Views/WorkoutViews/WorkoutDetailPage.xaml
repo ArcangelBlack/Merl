@@ -84,7 +84,19 @@
 					                         Spacing="4"
 					                         VerticalOptions="Center">
 									<Label Text="{Binding Path=Description}" FontSize="Medium"  TextColor="#3498DB" LineBreakMode="NoWrap"/>
-									<Label Text="{Binding Path=Range}" FontSize="Small" LineBreakMode="WordWrap"/>
+									<Grid HorizontalOptions="StartAndExpand">
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="Auto"/>
+											<ColumnDefinition/>
+											<ColumnDefinition Width="Auto"/>
+											<ColumnDefinition/>
+										</Grid.ColumnDefinitions>
+										<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="1" Text="{Binding Path=Range}" FontSize="Small" LineBreakMode="WordWrap"/>
+
+										<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>
+									</Grid>
 								</StackLayout>
 							</Grid>
 						</ViewCell>

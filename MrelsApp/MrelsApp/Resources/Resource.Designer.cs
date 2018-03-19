@@ -59,5 +59,41 @@ namespace MrelsApp.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ¿Olvidaste tu contraseña?.
+        /// </summary>
+        internal static string LOGINPAGE_Forgot {
+            get {
+                return ResourceManager.GetString("LOGINPAGE_Forgot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recordarme en este dispositivo.
+        /// </summary>
+        internal static string LOGINPAGE_Rememberme {
+            get {
+                return ResourceManager.GetString("LOGINPAGE_Rememberme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cerrar session.
+        /// </summary>
+        internal static string Menu_Exit {
+            get {
+                return ResourceManager.GetString("Menu_Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menú.
+        /// </summary>
+        internal static string Title_Menu {
+            get {
+                return ResourceManager.GetString("Title_Menu", resourceCulture);
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Windows.Input;
 using MrelsApp.Models;
+using MrelsApp.Utils;
+using MrelsApp.Views.WorkoutViews;
 
 namespace MrelsApp.ViewModels.WorkoutViewModels
 {
@@ -19,6 +19,17 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
         #region Properties
 
         public SubWorkoutModel ItemDetail { get; set; }
+
+        public ICommand NextCommand => new RelayCommand(this.NextCommandExecute);
+
+        #endregion
+
+        #region Commands
+
+        private async void NextCommandExecute()
+        {
+            await App.Navigator.PushAsync(new WorkoutSummaryPage());
+        }
 
         #endregion
     }

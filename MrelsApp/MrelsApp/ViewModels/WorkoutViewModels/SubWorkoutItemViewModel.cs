@@ -2,7 +2,6 @@
 using MrelsApp.Models;
 using MrelsApp.Utils;
 using MrelsApp.Views.WorkoutViews;
-using Xamarin.Forms;
 
 namespace MrelsApp.ViewModels.WorkoutViewModels
 {
@@ -19,7 +18,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
         private async void SelectSubWorkoutCommandExecute()
         {
             MainViewModel.GetInstanceMainViewModel().SubWorkoutDetailVm = new SubWorkoutDetailViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new SubWorkoutDetailPage());
+            await App.Navigator.PushAsync(new SubWorkoutDetailPage());
         }
 
         #endregion

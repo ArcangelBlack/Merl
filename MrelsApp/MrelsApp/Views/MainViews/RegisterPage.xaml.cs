@@ -1,12 +1,12 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MrelsApp.Views
+namespace MrelsApp.Views.MainViews
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class InitPage : ContentPage
+	public partial class RegisterPage : ContentPage
 	{
-		public InitPage ()
+		public RegisterPage()
 		{
 			InitializeComponent ();
 		}

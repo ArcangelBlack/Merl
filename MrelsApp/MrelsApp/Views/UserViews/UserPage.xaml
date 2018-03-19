@@ -81,10 +81,10 @@
 						<StackLayout CompressedLayout.IsHeadless="true" Margin="0,20,0,40" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0">
 							<BoxView Margin="30,10" BackgroundColor="#9B9B9B" HorizontalOptions="FillAndExpand" HeightRequest="1" />
 							<Label Text="Connected Accounts:" HorizontalOptions="Center" TextColor="#303030" FontSize="12"/>
-							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding FacebookVM}" />
-							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding TwitterVM}" />
-							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding YouTubeVM}" />
-							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding InstagramVM}" />
+							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=FacebookVM}" />
+							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=TwitterVM}" />
+							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=YouTubeVM}" />
+							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=InstagramVM}" />
 						</StackLayout>
 						<Button Grid.Row="5" Grid.ColumnSpan="2" IsVisible="{Binding CanSave}" HeightRequest="45" x:Name="SaveButton" Style="{StaticResource primaryButton}" Text="        Submit        " HorizontalOptions="Center" Command="{Binding SaveCommand}" />
 					</Grid>

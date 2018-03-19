@@ -1,8 +1,7 @@
 ﻿using System.Windows.Input;
 using MrelsApp.Utils;
 using MrelsApp.ViewModels.MainViewModels;
-using MrelsApp.ViewModels.UserViewModels;
-using MrelsApp.Views;
+using MrelsApp.Views.MainViews;
 using MrelsApp.Views.UserViews;
 using Xamarin.Forms;
 using LoginPage = MrelsApp.Views.MainViews.LoginPage;
@@ -29,8 +28,8 @@ namespace MrelsApp.ViewModels
 
         private async void RegisterCommandExecute()
         {
-            MainViewModel.GetInstanceMainViewModel().UserVm = new UserViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new UserPage());
+            MainViewModel.GetInstanceMainViewModel().RegisterVm = new RegisterViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
         }
 
         #endregion

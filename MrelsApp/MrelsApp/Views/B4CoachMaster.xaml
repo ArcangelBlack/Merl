@@ -4,12 +4,12 @@
 	x:Class="MrelsApp.Views.B4CoachMaster"
 	xmlns:workviews="clr-namespace:MrelsApp.Views.WorkoutViews"
 	xmlns:pages="clr-namespace:MrelsApp.Views"
-    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    Title="Menu">
 	<MasterDetailPage.Master>
-		<pages:B4CoachMasterMaster x:Name="MasterPage" />
+		<pages:B4CoachMasterMaster/>
 	</MasterDetailPage.Master>
 	<MasterDetailPage.Detail>
-		<NavigationPage>
+		<NavigationPage x:Name="Navigator">
 			<x:Arguments>
 				<workviews:WorkoutOverviewPage />
 			</x:Arguments>

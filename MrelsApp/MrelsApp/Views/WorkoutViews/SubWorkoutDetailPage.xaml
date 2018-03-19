@@ -6,41 +6,77 @@
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Title="{Binding Title}">
     <ContentPage.Content>
-		<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" BindingContext="{Binding Path=SubWorkoutDetailVm}">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width=".5*"/>
-				<ColumnDefinition Width=".1*"/>
-				<ColumnDefinition Width=".4*"/>
-			</Grid.ColumnDefinitions>
-			<abstractions:CircleImage 
-					Grid.ColumnSpan="3"
-					HeightRequest="150"
-					WidthRequest="150"
-					HorizontalOptions="CenterAndExpand"
-					VerticalOptions ="CenterAndExpand"
-					BorderColor="#3498DB" 
-					BorderThickness="4">
-				<abstractions:CircleImage.Source>
-					<UriImageSource Uri="{Binding Path=ItemDetail.ImageUri}" 
-						                CacheValidity="14" 
-						                CachingEnabled="true"/>
-				</abstractions:CircleImage.Source>
-			</abstractions:CircleImage>
-			<Label
-					Grid.Row="1"
-					Grid.ColumnSpan="3" Grid.Column="0"
-					FontSize="Small"
-					Text="{Binding Path=ItemDetail.Description}"
-					HorizontalOptions="Center"/>
+		<ScrollView BindingContext="{Binding Path=SubWorkoutDetailVm}">
+			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" >
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width=".5*"/>
+					<ColumnDefinition Width=".1*"/>
+					<ColumnDefinition Width=".4*"/>
+				</Grid.ColumnDefinitions>
+				<!--<abstractions:CircleImage 
+						Grid.ColumnSpan="3"
+						HeightRequest="150"
+						WidthRequest="150"
+						HorizontalOptions="CenterAndExpand"
+						VerticalOptions ="CenterAndExpand"
+						BorderColor="#3498DB" 
+						BorderThickness="4">
+					<abstractions:CircleImage.Source>
+						<UriImageSource Uri="{Binding Path=ItemDetail.ImageUri}" 
+											CacheValidity="14" 
+											CachingEnabled="true"/>
+					</abstractions:CircleImage.Source>
+				</abstractions:CircleImage>-->
+				<Label
+						Grid.Row="1"
+						Grid.ColumnSpan="3" Grid.Column="0"
+						FontSize="Medium" TextColor="#3498DB"
+						Text="{Binding Path=ItemDetail.Description}"
+						HorizontalOptions="Center"/>
 			
-			<WebView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>
+				<WebView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>
 
-		</Grid>
-    </ContentPage.Content>
+				<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					
+					<Label HorizontalOptions="Center" FontSize="50" Text="6"/>
+					<Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" FontSize="Medium" TextColor="#3498DB" Text="KG"/>
+
+					<Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" FontSize="50" Text="10"/>
+					<Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Medium" TextColor="#3498DB" Text="REP"/>
+				</Grid>
+
+				<Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+
+					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Large" TextColor="#3498DB" Text="Workout Paused"/>
+
+					<Button x:Name="BtnResume" Grid.Row="1" Grid.Column="0" BackgroundColor="#3498DB" BorderRadius="0" TextColor="White" Text="Resume"/>
+					<Button x:Name="BtnEnd" Grid.Row="1" Grid.Column="1" BackgroundColor="#81C134"  BorderRadius="0" TextColor="White" Text="Next"/>
+				</Grid>
+
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
 </ContentPage>

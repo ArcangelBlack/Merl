@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrelsApp.Views.CalendarPage">
+             x:Class="MrelsApp.Views.WorkoutViews.TrainingPage">
     <ContentPage.Content>
         <StackLayout>
-			<Label Text="Calendar Page"
+			<Label Text="Welcome to Training Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
-		</StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

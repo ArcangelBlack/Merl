@@ -1,13 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrelsApp.Views.WorkoutViews.WorkoutSummaryPage"
-			 Title="Workout Summary">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MrelsApp.Views.WorkoutViews.WorkoutSummaryPage"
+    BindingContext="{Binding Path=Main, Source={StaticResource Locator}}"
+	Title="Workout Summary">
     <ContentPage.Content>
-        <StackLayout>
-			<Label Text="workout summary!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+		<ScrollView BindingContext="{Binding Path=WorkoutSummaryVm}">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="25"/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" 
+				       FontSize="30" TextColor="#3498DB" Text="Workout Summary"/>
+				
+				<Label Grid.Row="2" Grid.Column="0" Text="60"/>
+				<Label Grid.Row="2" Grid.Column="0" Text="minutes"/>
+
+				<Label Grid.Row="3" Grid.Column="0" Text="600"/>
+				<Label Grid.Row="3" Grid.Column="0" Text="calories burnt"/>
+
+				<Label Grid.Row="4" Grid.Column="0" Text="3,4"/>
+				<Label Grid.Row="4" Grid.Column="0" Text="km run"/>
+
+				<Label Grid.Row="5" Grid.Column="0" Text="60"/>
+				<Label Grid.Row="5" Grid.Column="0" Text="Kg lifted weight"/>
+
+				<Button 
+					x:Name="ButtonLeaveFeedback"
+					Grid.Row="6"
+					Grid.Column="1"
+					BackgroundColor="#81C134" 
+					BorderRadius="0"
+					TextColor="White"
+					Text="Next"
+					Command="{Binding Path=RegisterCommand}"/>
+
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
 </ContentPage>

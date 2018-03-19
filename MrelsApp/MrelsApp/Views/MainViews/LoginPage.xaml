@@ -8,13 +8,28 @@
 		    BindingContext="{Binding Path=LoginVm}">
 
 			<BoxView HeightRequest="10"/>
-			<Image Source="logo.jpeg"  HorizontalOptions="Center" WidthRequest="200"/>
+			<Image Source="logo.jpeg"  HorizontalOptions="Center" WidthRequest="150"/>
 
 			<StackLayout Orientation="Vertical">
 				<Entry Text="{Binding Path=Email, Mode=TwoWay}" Placeholder="Email" HeightRequest="40" TextColor="Black"/>
 				<Entry Text="{Binding Path=Password, Mode=TwoWay}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
 			</StackLayout>
-				<!--<Frame VerticalOptions="StartAndExpand">
+
+			<StackLayout
+				Margin="10,0"
+				Orientation="Horizontal"
+				VerticalOptions="CenterAndExpand">
+				<Label HorizontalOptions="StartAndExpand" Text="Rememberme"
+					VerticalOptions="Center">
+				</Label>
+				<Switch IsToggled="{Binding Path=IsRemembered, Mode=TwoWay}"
+					HorizontalOptions="End">
+				</Switch>
+			</StackLayout>
+
+			<Label HorizontalOptions="Center" Text="¿Olvidaste tu contraseña?" TextColor="Blue" VerticalOptions="CenterAndExpand"/>
+
+			<!--<Frame VerticalOptions="StartAndExpand">
 						<StackLayout Orientation="Vertical" Spacing="10">
 								<Entry Text="{Binding Path=Email, Mode=TwoWay}" Placeholder="Email" HeightRequest="40" TextColor="Black"/>
 								<Entry Text="{Binding Path=Password, Mode=TwoWay}" Placeholder="Password" HeightRequest="40" TextColor="Black" IsPassword="True"/>
@@ -27,7 +42,7 @@
 			<Button Command="{Binding Path=LoginCommand}" Text="Login" TextColor="White" FontAttributes="Bold" FontSize="20" 
 				HorizontalOptions="FillAndExpand" BackgroundColor="#3498DB"/>
 
-			<ActivityIndicator IsRunning="{Binding Path=IsBusy, Mode=TwoWay}" VerticalOptions="CenterAndExpand"/>
+			<!--<ActivityIndicator IsRunning="{Binding Path=IsBusy, Mode=TwoWay}" VerticalOptions="CenterAndExpand"/>-->
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
