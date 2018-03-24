@@ -2,43 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MrelsApp.Views.InitPage"
-    BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    BindingContext="{Binding Main, Source={StaticResource Locator}}" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<Grid RowSpacing="0" ColumnSpacing="0" BindingContext="{Binding Path=InitVm}">
 			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="300"/>
+				<RowDefinition Height="50"/>
+				<RowDefinition Height="50"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*"/>
-				<ColumnDefinition Width="*"/>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
 			</Grid.ColumnDefinitions>
 
 			<Image
-				x:Name="HeroImage"
-				Grid.ColumnSpan="2"
-				Source="logo_bg.png"
+				Grid.Column="1"
+				Source="logo.png"
 				Aspect="AspectFill"
-
+				HorizontalOptions="Center"
+				VerticalOptions="Center"
 				WidthRequest="200"
 				HeightRequest="200"/>
-			<!--HorizontalOptions="FillAndExpand"
-				VerticalOptions ="FillAndExpand"-->
+
 			<Button 
-				x:Name="ButtonFindStore"
-				Grid.Row="1" Grid.Column="0"
-				BackgroundColor="#3498DB"
-				BorderRadius="0"
-				TextColor="White" 
+				x:Name="BtnLogin"
+				Grid.Row="1" Grid.Column="1"
+				HorizontalOptions="Center"
+				WidthRequest="200"
+				Style="{StaticResource PrimaryButton}"
 				Text="Sign in"
 				Command="{Binding Path=LoginCommand}"/>
+
 			<Button 
-				x:Name="ButtonLeaveFeedback"
-				Grid.Row="1"
-				Grid.Column="1"
-				BackgroundColor="#81C134" 
-				BorderRadius="0"
-				TextColor="White"
+				x:Name="BtnRegister"
+				Grid.Row="2" Grid.Column="1"
+				HorizontalOptions="Center"
+				WidthRequest="200"
+				Style="{StaticResource SecondaryButton}"
 				Text="Sign up"
 				Command="{Binding Path=RegisterCommand}"/>
 		</Grid>

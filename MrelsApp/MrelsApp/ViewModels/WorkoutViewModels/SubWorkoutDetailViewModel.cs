@@ -28,6 +28,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
 
         private async void NextCommandExecute()
         {
+            MainViewModel.GetInstanceMainViewModel().WorkoutSummaryVm = new WorkoutSummaryViewModel();
             await App.Navigator.PushAsync(new WorkoutSummaryPage());
         }
 

@@ -26,6 +26,8 @@ namespace MrelsApp.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::MrelsApp.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::MrelsApp.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::MrelsApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2876,11 +2878,11 @@ namespace MrelsApp.Droid
 			// aapt resource value: 0x7f020132
 			public const int notification_icon_background = 2130837810;
 			
-			// aapt resource value: 0x7f02013b
-			public const int notification_template_icon_bg = 2130837819;
-			
 			// aapt resource value: 0x7f02013c
-			public const int notification_template_icon_low_bg = 2130837820;
+			public const int notification_template_icon_bg = 2130837820;
+			
+			// aapt resource value: 0x7f02013d
+			public const int notification_template_icon_low_bg = 2130837821;
 			
 			// aapt resource value: 0x7f020133
 			public const int notification_tile_bg = 2130837811;
@@ -2892,19 +2894,22 @@ namespace MrelsApp.Droid
 			public const int splash_screen = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int twitter_icon_grey = 2130837814;
+			public const int trofeo = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int twitter_icon_white = 2130837815;
+			public const int twitter_icon_grey = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int xamarin_logo = 2130837816;
+			public const int twitter_icon_white = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int youtube_icon_grey = 2130837817;
+			public const int xamarin_logo = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int youtube_icon_white = 2130837818;
+			public const int youtube_icon_grey = 2130837818;
+			
+			// aapt resource value: 0x7f02013b
+			public const int youtube_icon_white = 2130837819;
 			
 			static Drawable()
 			{
@@ -3762,6 +3767,12 @@ namespace MrelsApp.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f09003f
+			public const int ApplicationName = 2131296319;
+			
+			// aapt resource value: 0x7f09003e
+			public const int Hello = 2131296318;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;

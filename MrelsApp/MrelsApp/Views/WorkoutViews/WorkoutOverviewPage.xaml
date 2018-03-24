@@ -5,13 +5,13 @@
 	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     BindingContext="{Binding Path=Main, Source={StaticResource Locator}}"
 	Title="{Binding Path=Title}"
-	x:Name="Workout Overview">
+	x:Name="Workout Overview" BackgroundColor="{StaticResource BgBase}">
 	<!--<ContentPage.ToolbarItems>
 		<ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
 	</ContentPage.ToolbarItems>-->
 	<ContentPage.Content>
 		<Grid BindingContext="{Binding Path=WorkoutOverviewVm}">
-			<ListView x:Name="ItemsListView" 
+			<ListView
                 ItemsSource="{Binding Path=Items, Mode=TwoWay}"
                 VerticalOptions="FillAndExpand"
                  HasUnevenRows="true"

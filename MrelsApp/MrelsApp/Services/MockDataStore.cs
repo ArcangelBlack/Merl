@@ -621,11 +621,11 @@ namespace MrelsApp.Services
         }
     }
 
-    public class MockTrainingPLanDataStore : IDataStore<TrainingPlanModel>
+    public class MockTrainingPlanDataStore : IDataStore<TrainingPlanModel>
     {
         List<TrainingPlanModel> items;
 
-        public MockTrainingPLanDataStore()
+        public MockTrainingPlanDataStore()
         {
             items = new List<TrainingPlanModel>();
 

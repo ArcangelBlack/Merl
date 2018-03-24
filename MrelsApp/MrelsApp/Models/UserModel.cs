@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SQLite.Net.Attributes;
 
 namespace MrelsApp.Models
 {
     public class UserModel
     {
-        //[PrimaryKey]
+        [PrimaryKey]
         public int UserId { get; set; }
 
         public string Username { get; set; }
@@ -32,9 +30,7 @@ namespace MrelsApp.Models
                     return "noimage";
                 }
 
-                return string.Format(
-                    "http://landsapi1.azurewebsites.net/{0}",
-                    ImagePath.Substring(1));
+                return string.Format("http://landsapi1.azurewebsites.net/{0}", ImagePath.Substring(1));
             }
         }
 
@@ -42,7 +38,7 @@ namespace MrelsApp.Models
 
         public override int GetHashCode()
         {
-            return UserId;
+            return this.UserId;
         }
     }
 }

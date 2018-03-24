@@ -4,47 +4,53 @@
     xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="MrelsApp.Views.B4CoachMasterMaster"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Master">
+    Title="Master" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<StackLayout BindingContext="{Binding Path=B4CoachMasterMasterVm}">
 			<ListView x:Name="MenuItemssListView"
-				  SeparatorVisibility="None"
+				  SeparatorVisibility="Default"
 				  HasUnevenRows="true"
 				  ItemsSource="{Binding Path=MenuItems}">
 				<ListView.Header>
-					<Grid BackgroundColor="#03A9F4">
+					<Grid BackgroundColor="{StaticResource PrincipalBackgroundColor}">
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="10"/>
 							<ColumnDefinition Width="*"/>
 							<ColumnDefinition Width="10"/>
 						</Grid.ColumnDefinitions>
 						<Grid.RowDefinitions>
-							<RowDefinition Height="*"/>
-							<RowDefinition Height="10"/>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
 						</Grid.RowDefinitions>
 
-						<abstractions:CircleImage x:Name="ProfilePic" Grid.Column="1" WidthRequest="104" HeightRequest="104"
-						    Source="david.jpg" BorderThickness="3" BorderColor="#9B9B9B" Aspect="AspectFill">
-							<!--<abstractions:CircleImage.WidthRequest>
-								<OnPlatform x:TypeArguments="x:Double" iOS="104" Android="104" WinPhone="104"/>
+						<abstractions:CircleImage x:Name="ProfilePic"
+						    Grid.Column="1" Margin="0,10,0,0"
+						    Source="david.jpg" 
+						    HorizontalOptions="CenterAndExpand"
+						    VerticalOptions ="CenterAndExpand"
+						    BorderColor="#3498DB" 
+						    BorderThickness="4">
+							<abstractions:CircleImage.WidthRequest>
+								<OnPlatform x:TypeArguments="x:Double" iOS="120" Android="120" WinPhone="120"/>
 							</abstractions:CircleImage.WidthRequest>
 							<abstractions:CircleImage.HeightRequest>
-								<OnPlatform x:TypeArguments="x:Double" iOS="104" Android="104" WinPhone="104"/>
-							</abstractions:CircleImage.HeightRequest>-->
+								<OnPlatform x:TypeArguments="x:Double" iOS="120" Android="120" WinPhone="120"/>
+							</abstractions:CircleImage.HeightRequest>
 						</abstractions:CircleImage>
 
 						<Label
 							Grid.Column="1"
 							Grid.Row="1"
-							Text="B4Coach"
+							Margin="0,5"
+							Text="Jastin Farias"
 							HorizontalOptions="Center"
-							Style="{DynamicResource SubtitleStyle}"/>
+							Style="{DynamicResource ContentSubMenuStyle}"/>
 					</Grid>
 				</ListView.Header>
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<Grid Padding="15,0" HorizontalOptions="FillAndExpand">
+							<Grid Padding="10,0" HorizontalOptions="FillAndExpand">
 								<Grid.GestureRecognizers>
 									<TapGestureRecognizer Command="{Binding Path=NavigationCommand}"/>
 								</Grid.GestureRecognizers>
@@ -53,7 +59,7 @@
 									<ColumnDefinition Width="*"/>
 								</Grid.ColumnDefinitions>
 								<Image WidthRequest="50" HeightRequest="50" Source="{Binding Path=Icon}"/>
-								<Label Grid.Column="1" VerticalOptions="Center" Text="{Binding Path=Title}"/>
+								<Label Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="{Binding Path=Title}"/>
 							</Grid>
 						</ViewCell>
 					</DataTemplate>

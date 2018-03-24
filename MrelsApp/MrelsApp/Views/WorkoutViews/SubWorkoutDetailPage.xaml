@@ -4,7 +4,7 @@
     xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="MrelsApp.Views.WorkoutViews.SubWorkoutDetailPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="{Binding Title}">
+    Title="{Binding Title}" BackgroundColor="{StaticResource BgBase}">
     <ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=SubWorkoutDetailVm}">
 			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" >
@@ -73,7 +73,7 @@
 					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Large" TextColor="#3498DB" Text="Workout Paused"/>
 
 					<Button x:Name="BtnResume" Grid.Row="1" Grid.Column="0" BackgroundColor="#3498DB" BorderRadius="0" TextColor="White" Text="Resume"/>
-					<Button x:Name="BtnEnd" Grid.Row="1" Grid.Column="1" BackgroundColor="#81C134"  BorderRadius="0" TextColor="White" Text="Next"/>
+					<Button x:Name="BtnEnd" Grid.Row="1" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
 				</Grid>
 
 			</Grid>

@@ -95,7 +95,7 @@
 				</OnPlatform>
 			</NavigationPage.Icon>
 			<x:Arguments>
-				<workviews:FeedBackPage />
+				<userviews:FeedBackPage />
 			</x:Arguments>
 		</NavigationPage>
 

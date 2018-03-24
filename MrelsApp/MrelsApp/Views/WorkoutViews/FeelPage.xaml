@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrelsApp.Views.WorkoutViews.FeelPage"
+             BindingContext="{Binding Path=Main, Source={StaticResource Locator}}" BackgroundColor="{StaticResource BgBase}">
+	<ContentPage.Content>
+		<ScrollView BindingContext="{Binding Path=FeelVm}">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="30"/>
+					<RowDefinition Height="120"/>
+					<RowDefinition Height="120"/>
+					<RowDefinition Height="120"/>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" FontSize="30" TextColor="#3498DB" Text="How do you feel?"/>
+
+				<Image Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_very_satisfied"/>
+
+				<Image Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_satisfied"/>
+
+				<Image Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_very_dissatisfied"/>
+
+				<Button 
+					Grid.Row="5"
+					Style="{StaticResource PrimaryButton}"
+					Text="Next"
+					Command="{Binding Path=NextCommand}"/>
+
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

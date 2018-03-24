@@ -38,6 +38,8 @@ namespace MrelsApp.ViewModels
 
         public WorkoutSummaryViewModel WorkoutSummaryVm { get; set; }
 
+        public FeelViewModel FeelVm { get; set; }
+
         #endregion
 
         #region Constructor

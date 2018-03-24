@@ -3,47 +3,107 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MrelsApp.Views.WorkoutViews.WorkoutSummaryPage"
     BindingContext="{Binding Path=Main, Source={StaticResource Locator}}"
-	Title="Workout Summary">
+	Title="Workout Summary" BackgroundColor="{StaticResource BgBase}">
     <ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=WorkoutSummaryVm}">
-			<Grid>
+			<Grid Margin="10,0">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition/>
 					<ColumnDefinition/>
 				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="25"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
 					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
-					<RowDefinition/>
+					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
-				<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" 
-				       FontSize="30" TextColor="#3498DB" Text="Workout Summary"/>
-				
-				<Label Grid.Row="2" Grid.Column="0" Text="60"/>
-				<Label Grid.Row="2" Grid.Column="0" Text="minutes"/>
 
-				<Label Grid.Row="3" Grid.Column="0" Text="600"/>
-				<Label Grid.Row="3" Grid.Column="0" Text="calories burnt"/>
+				<Image
+					Grid.Row="1"
+					Grid.Column="0"
+					Grid.ColumnSpan="2"
+					Source="trofeo.png"
+					Aspect="AspectFill"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"
+					WidthRequest="200"
+					HeightRequest="200"/>
 
-				<Label Grid.Row="4" Grid.Column="0" Text="3,4"/>
-				<Label Grid.Row="4" Grid.Column="0" Text="km run"/>
+				<Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
 
-				<Label Grid.Row="5" Grid.Column="0" Text="60"/>
-				<Label Grid.Row="5" Grid.Column="0" Text="Kg lifted weight"/>
+					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Style="{StaticResource ContentSubMenuStyle}" Text="600"/>
+
+					<Image Grid.Row="1" Grid.Column="0" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" Source="ic_favorite"/>
+					<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentStyle}" FontSize="Small" Text="calories burnt"/>
+				</Grid>
+
+				<Grid Grid.Row="3" Grid.Column="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<Label  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="3,4"/>
+
+					<Image Grid.Row="1" Grid.Column="0" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" Source="ic_directions_walk"/>
+					<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentStyle}" Text="km run"/>
+				</Grid>
+
+				<Grid Grid.Row="3" Grid.Column="1">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="60"/>
+
+					<Image Grid.Row="1" Grid.Column="0" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" Source="ic_timer"/>
+					<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentStyle}" Text="minutes"/>
+				</Grid>
+
+				<Grid Grid.Row="4" Grid.Column="0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="60"/>
+
+					<Image Grid.Row="1" Grid.Column="0" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" Source="ic_logo"/>
+					<Label Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Text="Kg lifted weight"/>
+				</Grid>
+
 
 				<Button 
-					x:Name="ButtonLeaveFeedback"
-					Grid.Row="6"
+					Grid.Row="7"
 					Grid.Column="1"
-					BackgroundColor="#81C134" 
-					BorderRadius="0"
-					TextColor="White"
+					Style="{StaticResource PrimaryButton}"
 					Text="Next"
-					Command="{Binding Path=RegisterCommand}"/>
+					Command="{Binding Path=NextCommand}"/>
 
 			</Grid>
 		</ScrollView>

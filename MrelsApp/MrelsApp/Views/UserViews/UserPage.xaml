@@ -5,7 +5,7 @@
     xmlns:converters="clr-namespace:MrelsApp.Converters"
     xmlns:customControls="clr-namespace:MrelsApp.CustomControls"
     x:Class="MrelsApp.Views.UserViews.UserPage"
-    BindingContext="{Binding Main, Source={StaticResource Locator}}"
+    BindingContext="{Binding Main, Source={StaticResource Locator}}" BackgroundColor="{StaticResource BgBase}"
     Title="{Binding Title}">
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -86,7 +86,8 @@
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=YouTubeVM}" />
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=InstagramVM}" />
 						</StackLayout>
-						<Button Grid.Row="5" Grid.ColumnSpan="2" IsVisible="{Binding CanSave}" HeightRequest="45" x:Name="SaveButton" Style="{StaticResource primaryButton}" Text="        Submit        " HorizontalOptions="Center" Command="{Binding SaveCommand}" />
+						<Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" Style="{StaticResource PrimaryButton}"
+						        Text="        Submit        " HorizontalOptions="Center" Command="{Binding SaveCommand}" />
 					</Grid>
 				</StackLayout>
 			</ScrollView>

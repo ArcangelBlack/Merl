@@ -7,6 +7,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="8.0.3" />
     <PackageReference Include="Plugin.Youtube" Version="1.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="SQLiteNetExtensions" Version="1.3.0" />
     <PackageReference Include="Xam.Plugin.Connectivity" Version="2.2.12" />
     <PackageReference Include="Xam.Plugin.Media" Version="3.1.3" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.2" />
@@ -89,7 +91,10 @@
     <EmbeddedResource Update="Views\UserViews\UserPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\WorkoutViews\FeedBackPage.xaml">
+    <EmbeddedResource Update="Views\UserViews\FeedBackPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\WorkoutViews\FeelPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\WorkoutViews\SubWorkoutDetailPage.xaml">
@@ -101,6 +106,10 @@
     <EmbeddedResource Update="Views\WorkoutViews\WorkoutSummaryPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\HelpViewModels\" />
   </ItemGroup>
 
 </Project>

@@ -18,7 +18,7 @@ namespace MrelsApp
         {
             InitializeComponent();
 
-            this.MainPage = new NavigationPage(new InitPage());
+            this.MainPage = new NavigationPage(new InitPage()) { BarBackgroundColor = Color.FromHex("#fbfbd0") };
 
             //Validar que en token es valido
             //var mainVm = MainViewModel.GetInstanceMainViewModel();

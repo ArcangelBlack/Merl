@@ -4,7 +4,7 @@
     x:Class="MrelsApp.Views.WorkoutViews.WorkoutDetailPage"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="{Binding Title}">
+    Title="{Binding Title}" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" BindingContext="{Binding Path=WorkoutOverviewDetailVm}">
 			<Grid.RowDefinitions>

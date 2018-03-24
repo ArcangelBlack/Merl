@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MrelsApp.Views.MainViews.LoginPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+             BindingContext="{Binding Main, Source={StaticResource Locator}}" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<StackLayout Orientation="Vertical" Padding="20" Spacing="30"
 		    BindingContext="{Binding Path=LoginVm}">
@@ -38,9 +38,8 @@
 				<StackLayout Orientation="Horizontal">
 					<Label Text="Forgot your password" TextColor="Blue" HorizontalOptions="Center"/>
 				</StackLayout>-->
-		
-			<Button Command="{Binding Path=LoginCommand}" Text="Login" TextColor="White" FontAttributes="Bold" FontSize="20" 
-				HorizontalOptions="FillAndExpand" BackgroundColor="#3498DB"/>
+
+			<Button Command="{Binding Path=LoginCommand}" Text="Login" HorizontalOptions="FillAndExpand" Style="{StaticResource PrimaryButton}"/>
 
 			<!--<ActivityIndicator IsRunning="{Binding Path=IsBusy, Mode=TwoWay}" VerticalOptions="CenterAndExpand"/>-->
 		</StackLayout>
