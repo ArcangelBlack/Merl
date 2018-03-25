@@ -102,7 +102,7 @@ namespace MrelsApp.Services
                     Description = "This is an item description."
                 },
                 new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "Cinta"},
-                new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "Elíptica"},
+                new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "Elíptica", UrlVideo = "http://skj-tech.com/music/The_Push-Up.mp4"},
                 new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "Bicicleta"},
                 new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "Bicicleta reclinada"},
                 new SubWorkoutModel { ParentId ="b3042745-52f2-4720-b111-a373fd28d409", Id = Guid.NewGuid().ToString(), Description = "remo"},

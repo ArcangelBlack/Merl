@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "InTheHand.Forms/1.0.2018.111": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.4.0.91020"
+        },
+        "compile": {
+          "lib/netstandard1.0/InTheHand.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/InTheHand.Forms.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -227,6 +239,38 @@
     }
   },
   "libraries": {
+    "InTheHand.Forms/1.0.2018.111": {
+      "sha512": "KVVTSmt1Qzgh5m2OUZAtE4b6AJIZFdW+wKJq6eNBuBBPkw16DieWi7eMIbo3taov1vg3mgCt8rKoIbAHZa/rXw==",
+      "type": "package",
+      "path": "inthehand.forms/1.0.2018.111",
+      "files": [
+        "inthehand.forms.1.0.2018.111.nupkg.sha512",
+        "inthehand.forms.nuspec",
+        "lib/MonoAndroid10/InTheHand.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/InTheHand.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10/InTheHand.Forms.dll",
+        "lib/MonoAndroid10/InTheHand.Forms.pdb",
+        "lib/MonoAndroid10/InTheHand.Forms.xml",
+        "lib/Xamarin.iOS10/InTheHand.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/InTheHand.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/InTheHand.Forms.dll",
+        "lib/Xamarin.iOS10/InTheHand.Forms.pdb",
+        "lib/Xamarin.iOS10/InTheHand.Forms.xml",
+        "lib/netstandard1.0/InTheHand.Forms.deps.json",
+        "lib/netstandard1.0/InTheHand.Forms.dll",
+        "lib/netstandard1.0/InTheHand.Forms.pdb",
+        "lib/netstandard1.0/InTheHand.Forms.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8/InTheHand.Forms.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/InTheHand.Forms.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/InTheHand.Forms.pdb",
+        "lib/uap10.0/InTheHand.Forms.Platform.UWP.dll",
+        "lib/uap10.0/InTheHand.Forms.Platform.UWP.pdb",
+        "lib/uap10.0/InTheHand.Forms.Platform.UWP.pri",
+        "lib/uap10.0/InTheHand.Forms.dll",
+        "lib/uap10.0/InTheHand.Forms.pdb",
+        "lib/uap10.0/InTheHand.Forms.xml"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -1149,6 +1193,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "InTheHand.Forms >= 1.0.2018.111",
       "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 8.0.3",
       "Plugin.Youtube >= 1.0.1",
@@ -1206,6 +1251,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "InTheHand.Forms": {
+            "target": "Package",
+            "version": "[1.0.2018.111, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

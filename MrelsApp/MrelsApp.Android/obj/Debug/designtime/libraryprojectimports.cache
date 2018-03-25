@@ -20,6 +20,7 @@
     <Jar>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\41\jl\bin\classes.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\51\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\6\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\7\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\13\jl\res</ResolvedResourceDirectory>
@@ -38,6 +39,7 @@
     <ResolvedResourceDirectory>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\40\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\lp\51\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\lp\6\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\lp\7\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\lp\13\jl\assets</ResolvedAssetDirectory>
@@ -51,6 +53,7 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\51.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\6.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\7.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\lp\13.stamp</ResolvedResourceDirectoryStamp>

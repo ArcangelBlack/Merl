@@ -2,48 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    xmlns:forms="clr-namespace:InTheHand.Forms;assembly=InTheHand.Forms"
     x:Class="MrelsApp.Views.WorkoutViews.SubWorkoutDetailPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="{Binding Title}" BackgroundColor="{StaticResource BgBase}">
+    Title="Push-up" BackgroundColor="{StaticResource BgBase}">
     <ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=SubWorkoutDetailVm}">
 			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" >
 				<Grid.RowDefinitions>
 					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="200"/>
 					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="*"/>
 					<RowDefinition Height="Auto"/>
+					<RowDefinition/>
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width=".5*"/>
 					<ColumnDefinition Width=".1*"/>
-					<ColumnDefinition Width=".4*"/>
+					<ColumnDefinition Width=".5*"/>
 				</Grid.ColumnDefinitions>
-				<!--<abstractions:CircleImage 
-						Grid.ColumnSpan="3"
-						HeightRequest="150"
-						WidthRequest="150"
-						HorizontalOptions="CenterAndExpand"
-						VerticalOptions ="CenterAndExpand"
-						BorderColor="#3498DB" 
-						BorderThickness="4">
-					<abstractions:CircleImage.Source>
-						<UriImageSource Uri="{Binding Path=ItemDetail.ImageUri}" 
-											CacheValidity="14" 
-											CachingEnabled="true"/>
-					</abstractions:CircleImage.Source>
-				</abstractions:CircleImage>-->
-				<Label
-						Grid.Row="1"
-						Grid.ColumnSpan="3" Grid.Column="0"
-						FontSize="Medium" TextColor="#3498DB"
-						Text="{Binding Path=ItemDetail.Description}"
-						HorizontalOptions="Center"/>
-			
-				<WebView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>
 
-				<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+				<forms:MediaElement 
+					Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+					HorizontalOptions="StartAndExpand" BackgroundColor="{StaticResource BgBase}" VerticalOptions="StartAndExpand" HeightRequest="180" 
+				    x:Name="Media" IsLooping="True"  AreTransportControlsEnabled="true" 
+				    Source="{Binding Path=ItemDetail.UrlVideo}"/>
+
+				<!--<WebView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>-->
+
+				<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="50" Text="20"/>
+				<Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="40" Text="REPS."/>
+
+				<!--<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition/>
 						<ColumnDefinition/>
@@ -58,22 +49,21 @@
 
 					<Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" FontSize="50" Text="10"/>
 					<Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Medium" TextColor="#3498DB" Text="REP"/>
-				</Grid>
+				</Grid>-->
 
-				<Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">
+				<Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition/>
 						<ColumnDefinition/>
 					</Grid.ColumnDefinitions>
-					<Grid.RowDefinitions>
+					<!--<Grid.RowDefinitions>
 						<RowDefinition/>
 						<RowDefinition/>
-					</Grid.RowDefinitions>
+					</Grid.RowDefinitions>-->
 
-					<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="Large" TextColor="#3498DB" Text="Workout Paused"/>
-
-					<Button x:Name="BtnResume" Grid.Row="1" Grid.Column="0" BackgroundColor="#3498DB" BorderRadius="0" TextColor="White" Text="Resume"/>
-					<Button x:Name="BtnEnd" Grid.Row="1" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
+					<Button x:Name="BtnPause" Grid.Row="0" Grid.Column="0" Style="{StaticResource PrimaryButton}" Text="Pause"/>
+					<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
+					<!--<Button x:Name="BtnEndWorkout" Grid.Row="1" Grid.Column="1" Style="{StaticResource SecondaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>-->
 				</Grid>
 
 			</Grid>

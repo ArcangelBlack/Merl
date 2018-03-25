@@ -1,33 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MrelsApp.Views.WorkoutViews.FeelPage"
-             BindingContext="{Binding Path=Main, Source={StaticResource Locator}}" BackgroundColor="{StaticResource BgBase}">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MrelsApp.Views.WorkoutViews.FeelPage"
+    BindingContext="{Binding Path=Main, Source={StaticResource Locator}}" 
+    BackgroundColor="{StaticResource BgBase}"
+	Title="How do you feel?">
 	<ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=FeelVm}">
-			<Grid>
+			<Grid Margin="10,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="30"/>
-					<RowDefinition Height="120"/>
-					<RowDefinition Height="120"/>
-					<RowDefinition Height="120"/>
-					<RowDefinition Height="*"/>
 					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="*"/>
 				</Grid.RowDefinitions>
 
-				<Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" FontSize="30" TextColor="#3498DB" Text="How do you feel?"/>
+				<Image Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" Source="ic_sentiment_very_satisfied">
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
+					</Image.GestureRecognizers>
+				</Image>
+				<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Nice workout"/>
 
-				<Image Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_very_satisfied"/>
+				<Image Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" Source="ic_sentiment_neutral">
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
+					</Image.GestureRecognizers>
+				</Image>
+				<Label Grid.Row="2" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Nice workout, but I could not do all the reps"/>
 
-				<Image Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_satisfied"/>
-
-				<Image Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" Source="ic_sentiment_very_dissatisfied"/>
-
-				<Button 
-					Grid.Row="5"
-					Style="{StaticResource PrimaryButton}"
-					Text="Next"
-					Command="{Binding Path=NextCommand}"/>
+				<Image Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" Source="ic_sentiment_very_dissatisfied">
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
+					</Image.GestureRecognizers>
+				</Image>
+				<Label Grid.Row="3" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Training too difficult. I could not do half."/>
 
 			</Grid>
 		</ScrollView>

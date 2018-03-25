@@ -54,12 +54,12 @@ xmlns:infra="clr-namespace:MrelsApp.Infrastructure;assembly=MrelsApp"
 				<Setter Property="TextColor" Value="{StaticResource darkAccentColor}" />
 			</Style>
 
-			<Style TargetType="Frame">
+			<!--<Style TargetType="Frame">
 				<Setter Property="BackgroundColor" Value="{StaticResource accentColor}" />
 				<Setter Property="Padding" Value="{StaticResource StandardPadding}" />
 				<Setter Property="HasShadow" Value="False" />
 				<Setter Property="OutlineColor" Value="{StaticResource secondaryColor}" />
-			</Style>
+			</Style>-->
 
 			<!-- Label Styles -->
 
@@ -74,6 +74,7 @@ xmlns:infra="clr-namespace:MrelsApp.Infrastructure;assembly=MrelsApp"
 				<Setter Property="VerticalOptions" Value="Center" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="FontAttributes" Value="Bold"/>
+				<Setter Property="FontSize" Value="{StaticResource MediumTextSize}"></Setter>
 			</Style>
 
 			<Style x:Key="ContentSubMenuStyle" TargetType="Label">

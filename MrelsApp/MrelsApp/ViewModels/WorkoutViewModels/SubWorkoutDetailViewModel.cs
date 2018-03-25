@@ -11,6 +11,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
 
         public SubWorkoutDetailViewModel(SubWorkoutModel item = null)
         {
+            this.Title = item.Description;
             this.ItemDetail = item;
         }
 
