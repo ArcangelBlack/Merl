@@ -16,6 +16,7 @@
 					<RowDefinition Height="Auto"/>
 					<RowDefinition/>
 					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width=".5*"/>
@@ -61,10 +62,56 @@
 						<RowDefinition/>
 					</Grid.RowDefinitions>-->
 
-					<Button x:Name="BtnPause" Grid.Row="0" Grid.Column="0" Style="{StaticResource PrimaryButton}" Text="Pause"/>
-					<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource SecondaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
+					<Button x:Name="BtnPause" Grid.Row="0" Grid.Column="0" Style="{StaticResource SecondaryButton}" Text="Pause" Command="{Binding Path=PauseCommand}"/>
+					<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
 					<!--<Button x:Name="BtnEndWorkout" Grid.Row="1" Grid.Column="1" Style="{StaticResource SecondaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>-->
 				</Grid>
+
+				<Frame Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
+					<Grid>
+						<Grid.Padding>
+							<OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>
+						</Grid.Padding>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<abstractions:CircleImage VerticalOptions="Center"
+					                                  BorderColor="#3498DB"
+					                                  BorderThickness="2"
+					                                  Aspect="AspectFill" Source="pull_down.jpg">
+							<abstractions:CircleImage.WidthRequest>
+								<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
+							</abstractions:CircleImage.WidthRequest>
+							<abstractions:CircleImage.HeightRequest>
+								<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
+							</abstractions:CircleImage.HeightRequest>
+							<!--<controls:CircleImage.Source>
+										<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
+									</controls:CircleImage.Source>-->
+						</abstractions:CircleImage>
+						<StackLayout Grid.Column="1"
+					                         Padding="8"
+					                         Spacing="4"
+					                         VerticalOptions="Center">
+							<Label Text="Pull down machine" FontSize="Medium"  Style="{StaticResource ContentSubMenuStyle}" LineBreakMode="NoWrap"/>
+							<Grid HorizontalOptions="StartAndExpand">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition/>
+									<!--<ColumnDefinition Width="Auto"/>
+											<ColumnDefinition/>-->
+								</Grid.ColumnDefinitions>
+								<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
+								<Label Grid.Column="0" Text="20" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
+								<Label Grid.Column="1" Text="reps." TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
+
+								<!--<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>-->
+							</Grid>
+						</StackLayout>
+					</Grid>
+				</Frame>
 
 			</Grid>
 		</ScrollView>

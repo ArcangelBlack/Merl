@@ -74,7 +74,8 @@
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=YouTubeVm}" />
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=InstagramVm}" />-->
 						</StackLayout>
-						<Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" x:Name="SaveButton" Style="{StaticResource primaryButton}" Text="Submit" HorizontalOptions="Center" Command="{Binding Path=SaveCommand}" />
+						
+						<Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" x:Name="SaveRegisterButton" Style="{StaticResource PrimaryButton}" Text="Save" HorizontalOptions="Center" Command="{Binding Path=SaveCommand}" />
 					</Grid>
 				</StackLayout>
 			</ScrollView>

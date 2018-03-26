@@ -87,7 +87,7 @@
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=InstagramVM}" />
 						</StackLayout>
 						<Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" Style="{StaticResource PrimaryButton}"
-						        Text="        Submit        " HorizontalOptions="Center" Command="{Binding SaveCommand}" />
+						        Text="        Submit" HorizontalOptions="Center" Command="{Binding Path=SaveCommand}" />
 					</Grid>
 				</StackLayout>
 			</ScrollView>

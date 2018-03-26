@@ -415,6 +415,7 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\ImageCircle.Forms.Plugin.Android.dll.mdb

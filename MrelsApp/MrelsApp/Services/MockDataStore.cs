@@ -409,36 +409,36 @@ namespace MrelsApp.Services
                 //    UrlVideo =
                 //        "https://www.youtube.com/watch?v=ElDIvayj3oI&list=PLBy4FXpRwvuX-UNN3dztZ1X2tApS_GDbX&index=4"
                 //},
-                new SubWorkoutModel
-                {
-                    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
-                    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
-                    Id = Guid.NewGuid().ToString(),
-                    Description = "Crunch normal",
-                    Cantidad = "20 ",
-                    Sensor = "reps.",
-                    ImageUri = "Crunch_normal.jpg"
-                },
-                new SubWorkoutModel
-                {
-                    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
-                    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
-                    Id = Guid.NewGuid().ToString(),
-                    Description = "Crunch laterales",
-                    Cantidad = "1",
-                    Sensor = "serie al maximo",
-                    ImageUri = "Isometrico_lateral.jpg"
-                },
-                new SubWorkoutModel
-                {
-                    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
-                    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
-                    Id = Guid.NewGuid().ToString(),
-                    Description = "Isometrico frontal",
-                    Cantidad = "1",
-                    Sensor = "serie al maximo",
-                    ImageUri = "Isometrico_frontal.jpg"
-                },
+                //new SubWorkoutModel
+                //{
+                //    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
+                //    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
+                //    Id = Guid.NewGuid().ToString(),
+                //    Description = "Crunch normal",
+                //    Cantidad = "20 ",
+                //    Sensor = "reps.",
+                //    ImageUri = "Crunch_normal.jpg"
+                //},
+                //new SubWorkoutModel
+                //{
+                //    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
+                //    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
+                //    Id = Guid.NewGuid().ToString(),
+                //    Description = "Crunch laterales",
+                //    Cantidad = "1",
+                //    Sensor = "serie al maximo",
+                //    ImageUri = "Isometrico_lateral.jpg"
+                //},
+                //new SubWorkoutModel
+                //{
+                //    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
+                //    //ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
+                //    Id = Guid.NewGuid().ToString(),
+                //    Description = "Isometrico frontal",
+                //    Cantidad = "1",
+                //    Sensor = "serie al maximo",
+                //    ImageUri = "Isometrico_frontal.jpg"
+                //},
                 //new SubWorkoutModel
                 //{
                 //    ParentId = "f617be8e-c751-44e5-94d1-48b6d35ac41c",
@@ -497,18 +497,18 @@ namespace MrelsApp.Services
                 //    UrlVideo =
                 //        "https://www.youtube.com/watch?v=m4ytaCJZpl0&index=2&list=PLBrgqsGCyn2xQVBgDaemdoK8TJlgSpX0G"
                 //},
-                new SubWorkoutModel
-                {
-                    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
-                    //ParentId = "4af3faec-b737-4b38-978b-8bc70bc03304",
-                    Id = Guid.NewGuid().ToString(),
-                    Description = "Air squat",
-                    Cantidad = "20",
-                    Sensor = "reps.",
-                    UrlVideo =
-                        "https://www.youtube.com/watch?v=C_VtOYc6j5c&list=PLBrgqsGCyn2xQVBgDaemdoK8TJlgSpX0G",
-                    ImageUri = "Air_squat.jpeg"
-                },
+                //new SubWorkoutModel
+                //{
+                //    ParentId ="b3042745-52f2-4720-b111-a373fd28d409",
+                //    //ParentId = "4af3faec-b737-4b38-978b-8bc70bc03304",
+                //    Id = Guid.NewGuid().ToString(),
+                //    Description = "Air squat",
+                //    Cantidad = "20",
+                //    Sensor = "reps.",
+                //    UrlVideo =
+                //        "https://www.youtube.com/watch?v=C_VtOYc6j5c&list=PLBrgqsGCyn2xQVBgDaemdoK8TJlgSpX0G",
+                //    ImageUri = "Air_squat.jpeg"
+                //},
                 //new SubWorkoutModel
                 //{
                 //    ParentId = "4af3faec-b737-4b38-978b-8bc70bc03304",

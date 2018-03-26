@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="MrelsApp.Views.WorkoutViews.BreakPage"
+    BindingContext="{Binding Path=Main, Source={StaticResource Locator}}" 
+    BackgroundColor="{StaticResource BgBase}"
+    Title="Rest">
+    <ContentPage.Content>
+		<Grid Padding="10" RowSpacing="10" ColumnSpacing="10"  BindingContext="{Binding Path=InitVm}">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="10"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="50"/>
+				<RowDefinition Height="50"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+
+			<abstractions:CircleImage 
+				Grid.Row="1"
+				Grid.ColumnSpan="3"
+				HorizontalOptions="Center"
+				VerticalOptions ="Center"
+			    BorderColor="#3498DB"
+			    BorderThickness="10"
+			    Source="logo_bg.png">
+				<abstractions:CircleImage.WidthRequest>
+					<OnPlatform x:TypeArguments="x:Double" iOS="250" Android="250" WinPhone="250"/>
+				</abstractions:CircleImage.WidthRequest>
+				<abstractions:CircleImage.HeightRequest>
+					<OnPlatform x:TypeArguments="x:Double" iOS="250" Android="250" WinPhone="250"/>
+				</abstractions:CircleImage.HeightRequest>
+				<!--<abstractions:CircleImage.Source>
+					<UriImageSource Uri="logo.png" CacheValidity="14" CachingEnabled="true"/>
+				</abstractions:CircleImage.Source>-->
+			</abstractions:CircleImage>
+
+			<!--<Image
+				Grid.Row="1"
+				Grid.Column="1"
+				Source="logo.png"
+				Aspect="AspectFill"
+				HorizontalOptions="Center"
+				VerticalOptions="Center"
+				WidthRequest="200"
+				HeightRequest="200"/>-->
+
+
+			<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="50" Text="14 s"/>
+
+			<Frame Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
+				<Grid>
+					<Grid.Padding>
+						<OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>
+					</Grid.Padding>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<abstractions:CircleImage VerticalOptions="Center"
+					                                  BorderColor="#3498DB"
+					                                  BorderThickness="2"
+					                                  Aspect="AspectFill" Source="pull_down.jpg">
+						<abstractions:CircleImage.WidthRequest>
+							<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
+						</abstractions:CircleImage.WidthRequest>
+						<abstractions:CircleImage.HeightRequest>
+							<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
+						</abstractions:CircleImage.HeightRequest>
+						<!--<controls:CircleImage.Source>
+										<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
+									</controls:CircleImage.Source>-->
+					</abstractions:CircleImage>
+					<StackLayout Grid.Column="1"
+					                         Padding="8"
+					                         Spacing="4"
+					                         VerticalOptions="Center">
+						<Label Text="Pull down machine" FontSize="Medium"  Style="{StaticResource ContentSubMenuStyle}" LineBreakMode="NoWrap"/>
+						<Grid HorizontalOptions="StartAndExpand">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition/>
+								<!--<ColumnDefinition Width="Auto"/>
+											<ColumnDefinition/>-->
+							</Grid.ColumnDefinitions>
+							<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
+							<Label Grid.Column="0" Text="20" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
+							<Label Grid.Column="1" Text="reps." TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
+
+							<!--<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>-->
+						</Grid>
+					</StackLayout>
+				</Grid>
+			</Frame>
+
+		</Grid>
+    </ContentPage.Content>
+</ContentPage>

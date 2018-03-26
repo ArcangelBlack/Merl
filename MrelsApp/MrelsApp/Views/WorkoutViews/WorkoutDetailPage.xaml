@@ -91,11 +91,9 @@
 											<ColumnDefinition/>-->
 										</Grid.ColumnDefinitions>
 										<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
-										<Label Grid.Column="0" Text="{Binding Path=Cantidad}" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
-										<Label Grid.Column="1" Text="{Binding Path=Sensor}" TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="0" Text="{Binding Path=Cantidad}" VerticalOptions="Center" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
+										<Label Grid.Column="1" Text="{Binding Path=Sensor}" VerticalOptions="Center" TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
 
-										<!--<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
-										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>-->
 									</Grid>
 								</StackLayout>
 							</Grid>
@@ -104,13 +102,14 @@
 				</ListView.ItemTemplate>
 			</ListView>
 
-			<Button 
-				x:Name="BtnLogin"
-				Grid.Row="3" Grid.Column="2"
-				HorizontalOptions="Center"
-				WidthRequest="200"
-				Style="{StaticResource PrimaryButton}"
-				Text="Start"/>
+			<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Start"/>
+			</Grid>
+
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

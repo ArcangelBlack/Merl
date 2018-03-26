@@ -23,6 +23,8 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
 
         public ICommand NextCommand => new RelayCommand(this.NextCommandExecute);
 
+        public ICommand PauseCommand => new RelayCommand(this.PauseCommandExecute);
+
         #endregion
 
         #region Commands
@@ -32,6 +34,13 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
             MainViewModel.GetInstanceMainViewModel().WorkoutSummaryVm = new WorkoutSummaryViewModel();
             await App.Navigator.PushAsync(new WorkoutSummaryPage());
         }
+
+        private async void PauseCommandExecute()
+        {
+            MainViewModel.GetInstanceMainViewModel().BreakVm = new BreakViewModel();
+            await App.Navigator.PushAsync(new BreakPage());
+        }
+
 
         #endregion
     }

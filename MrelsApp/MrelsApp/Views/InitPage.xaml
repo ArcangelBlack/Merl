@@ -32,6 +32,7 @@
 				WidthRequest="200"
 				Style="{StaticResource PrimaryButton}"
 				Text="Sign in"
+				BorderRadius="23"
 				Command="{Binding Path=LoginCommand}"/>
 
 			<Button 

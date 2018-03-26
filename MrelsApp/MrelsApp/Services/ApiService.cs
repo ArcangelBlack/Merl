@@ -10,7 +10,14 @@ using Plugin.Connectivity;
 
 namespace MrelsApp.Services
 {
-    public class ApiService
+    public interface IApiService
+    {
+        Task<Response> CheckConnection();
+
+        Task<TokenResponse> GetToken(string urlBase, string username, string password);
+    }
+
+    public class ApiService: IApiService
     {
         public async Task<Response> CheckConnection()
         {
@@ -23,8 +30,7 @@ namespace MrelsApp.Services
                 };
             }
 
-            var isReachable = await CrossConnectivity.Current.IsRemoteReachable(
-                "google.com");
+            var isReachable = await CrossConnectivity.Current.IsRemoteReachable("google.com");
             if (!isReachable)
             {
                 return new Response
