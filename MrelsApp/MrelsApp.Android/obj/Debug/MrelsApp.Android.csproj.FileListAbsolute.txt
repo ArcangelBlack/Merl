@@ -129,7 +129,6 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\MrelsApp\MrelsApp\Mr
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\MrelsApp\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable-hdpi\twitter_icon_white.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\MrelsApp\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable-hdpi\youtube_icon_grey.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\MrelsApp\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable-hdpi\youtube_icon_white.png
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\MrelsApp.Android.csprojResolveAssemblyReference.cache
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\com.b4coach.App.apk
@@ -137,6 +136,7 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\en\MrelsApp.resources.dll
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\MrelsApp.Android.csprojResolveAssemblyReference.cache
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\MrelsApp.Android.csproj.CoreCompileInputs.cache
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\MrelsApp.Android.csproj.CopyComplete
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\MrelsApp.Android.dll
@@ -291,9 +291,16 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable-xxhdpi\ic_settings_power.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable-xxxhdpi\ic_settings_power.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\logo_bg.png
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\trofeo.png
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\air_squat.jpeg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\crunch_normal.jpg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\eliptica.png
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\isometrico_frontal.jpg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\isometrico_lateral.jpg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\pull_down.jpg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\pushups.jpg
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\R.cs.flag
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\uploadflags.txt
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\trofeo.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\Mono.Android.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\mscorlib.pdb
@@ -341,6 +348,8 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\System.Web.Services.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\ImageCircle.Forms.Plugin.Android.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\InTheHand.Forms.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\InTheHand.Forms.Platform.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\Plugin.Connectivity.Abstractions.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\Plugin.Connectivity.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\Plugin.Media.dll.mdb
@@ -354,6 +363,8 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\ImageCircle.Forms.Plugin.Android.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\InTheHand.Forms.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\InTheHand.Forms.Platform.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\Plugin.Connectivity.Abstractions.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\Plugin.Connectivity.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\Plugin.Media.dll.mdb
@@ -367,6 +378,8 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\InTheHand.Forms.dll.mdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\InTheHand.Forms.Platform.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
@@ -401,14 +414,7 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Web.Services.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\InTheHand.Forms.dll.mdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\InTheHand.Forms.Platform.Android.dll.mdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\InTheHand.Forms.dll.mdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\InTheHand.Forms.Platform.Android.dll.mdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\InTheHand.Forms.dll.mdb
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\InTheHand.Forms.Platform.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.dll
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\ImageCircle.Forms.Plugin.Android.dll.mdb

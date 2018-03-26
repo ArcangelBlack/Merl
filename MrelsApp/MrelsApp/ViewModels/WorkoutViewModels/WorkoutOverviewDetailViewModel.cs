@@ -59,7 +59,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
                         Id = item.Id,
                         ImageUri = item.ImageUri,
                         Description = item.Description,
-                        Range =  item.Range,
+                        Cantidad =  item.Cantidad,
                         Sensor = item.Sensor,
                         UrlVideo = item.UrlVideo
                     };

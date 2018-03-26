@@ -10,7 +10,7 @@
 
         public string ImageUri { get; set; }
 
-        public string Range { get; set; }
+        public string Cantidad { get; set; }
 
         public string Sensor { get; set; }
 
