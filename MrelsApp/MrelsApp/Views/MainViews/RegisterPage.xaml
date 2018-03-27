@@ -33,11 +33,15 @@
 									<OnPlatform x:TypeArguments="x:Double" iOS="104" Android="104" WinPhone="104"/>
 								</controls:CircleImage.HeightRequest>
 							</controls:CircleImage>
-							<Button Text="Change Photo" Style="{StaticResource nakedButton}" FontSize="12" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent" TextColor="#303030" Command="{Binding Path=ChangeImageCommand}"/>
+							<Button Text="Change Photo" Style="{StaticResource NakedButton}" FontSize="12" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent" TextColor="#303030" Command="{Binding Path=ChangeImageCommand}"/>
 						</StackLayout>
 						<StackLayout CompressedLayout.IsHeadless="true" Spacing="10" HorizontalOptions="FillAndExpand" Orientation="Vertical">
 							<Entry x:Name="FirstNameEntry" HorizontalOptions="FillAndExpand" Placeholder="First Name" Text="{Binding FirstName}" />
 							<Entry x:Name="LastNameEntry" HorizontalOptions="FillAndExpand" Placeholder="Last Name" Text="{Binding LastName}" />
+							<!--Rellenar con el tipo-->
+							<Picker Title="Selected Training Plant" 
+							        ItemsSource="{Binding Path=TrainingPlanList, Mode=TwoWay}" SelectedItem="{Binding Path=SelectTrainingPlan}"
+							        ItemDisplayBinding="{Binding Path=Description}"/>
 						</StackLayout>
 					</StackLayout>
 					<Grid CompressedLayout.IsHeadless="true" Margin="20, 0, 20, 0">
@@ -54,7 +58,7 @@
 							<ColumnDefinition Width="1*"/>
 							<ColumnDefinition Width="1*"/>
 						</Grid.ColumnDefinitions>
-						<Entry Grid.Row="0" Grid.Column="0" x:Name="EmailEntry" HorizontalOptions="FillAndExpand" Placeholder="Email" Text="{Binding Path=Email}" />
+						<Entry Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" x:Name="EmailEntry" HorizontalOptions="FillAndExpand" Placeholder="Email" Text="{Binding Path=Email}" />
 						<!--<Entry Grid.Row="0" Grid.Column="1" x:Name="LastNameEntry" HorizontalOptions="FillAndExpand" Placeholder="Last Name" Text="{Binding LastName}" />-->
 
 						<Entry Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" Placeholder="Phone" Text="{Binding Path=Telephone, Mode=TwoWay}"/>
@@ -66,7 +70,7 @@
 						<Entry Grid.Row="2" Grid.Column="1" x:Name="ConfirmPasswordEntry" IsPassword="true" HorizontalOptions="FillAndExpand" Placeholder="Confirm Password" Text="{Binding Path=Confirm, Mode=TwoWay}" />
 						<Label Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" Margin="10" Text="Password must be 8 digits long and include 1 number and 1 capital letter." TextColor="#303030" FontSize="12" HorizontalOptions="FillAndExpand" />
 						<!--<customControls:StrengthIndicatorsControl Strength="{Binding Path=PasswordStrength}" HorizontalOptions="Center" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" />-->
-						<StackLayout CompressedLayout.IsHeadless="true" Margin="0,20,0,40" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0">
+						<StackLayout Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" CompressedLayout.IsHeadless="true" Margin="0,20,0,40" >
 							<BoxView Margin="30,10" BackgroundColor="#9B9B9B" HorizontalOptions="FillAndExpand" HeightRequest="1" />
 							<Label Text="Connected Accounts:" HorizontalOptions="Center" TextColor="#303030" FontSize="12"/>
 							<!--<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=FacebookVm}" />
@@ -75,7 +79,8 @@
 							<customControls:ConnectSocialButtonControl HorizontalOptions="Center" BindingContext="{Binding Path=InstagramVm}" />-->
 						</StackLayout>
 						
-						<Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" x:Name="SaveRegisterButton" Style="{StaticResource PrimaryButton}" Text="Save" HorizontalOptions="Center" Command="{Binding Path=SaveCommand}" />
+						
+						<Button Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="0" HeightRequest="45" x:Name="SaveRegisterButton" Style="{StaticResource PrimaryButton}" Text="Save" HorizontalOptions="Center" Command="{Binding Path=SaveCommand}" />
 					</Grid>
 				</StackLayout>
 			</ScrollView>

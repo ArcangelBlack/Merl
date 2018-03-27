@@ -22,7 +22,6 @@
 			    x:Name="ButtonManage"
 			    Grid.Row="1" Grid.Column="0"
 			    BackgroundColor="#3498DB"
-			    BorderRadius="0"
 			    TextColor="White"
 			    Text="Nuevo Pedido"/>
 		    <Button
@@ -30,7 +29,6 @@
 			    Grid.Row="1"
 			    Grid.Column="1"
 			    BackgroundColor="#81C134"
-			    BorderRadius="0"
 			    TextColor="White"
 			    Text="Mi Perfil"/>
 	    </Grid>

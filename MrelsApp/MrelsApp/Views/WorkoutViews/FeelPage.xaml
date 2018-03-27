@@ -25,21 +25,21 @@
 						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
 					</Image.GestureRecognizers>
 				</Image>
-				<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Nice workout"/>
+				<Label Grid.Row="1" Grid.Column="1" Style="{StaticResource ContentLabelStyle}" FontSize="24" Text="Nice workout"/>
 
 				<Image Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest="200" HeightRequest="200" Source="ic_sentiment_neutral">
 					<Image.GestureRecognizers>
 						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
 					</Image.GestureRecognizers>
 				</Image>
-				<Label Grid.Row="2" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Nice workout, but I could not do all the reps"/>
+				<Label Grid.Row="2" Grid.Column="1" Style="{StaticResource ContentLabelStyle}" FontSize="24" Text="Nice workout, but I could not do all the reps"/>
 
 				<Image Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" Aspect="AspectFill" WidthRequest="200" HeightRequest="200" Source="ic_sentiment_very_dissatisfied">
 					<Image.GestureRecognizers>
 						<TapGestureRecognizer Command="{Binding Path=NextCommand}"/>
 					</Image.GestureRecognizers>
 				</Image>
-				<Label Grid.Row="3" Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="Training too difficult. I could not do half."/>
+				<Label Grid.Row="3" Grid.Column="1" Style="{StaticResource ContentLabelStyle}" FontSize="24" Text="Training too difficult. I could not do half."/>
 
 			</Grid>
 		</ScrollView>

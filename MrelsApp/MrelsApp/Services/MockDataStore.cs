@@ -36,34 +36,34 @@ namespace MrelsApp.Services
             }
         }
 
-        public async Task<bool> AddItemAsync(WorkoutModel item)
-        {
-            items.Add(item);
+        //public async Task<bool> AddItemAsync(WorkoutModel item)
+        //{
+        //    items.Add(item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<bool> UpdateItemAsync(WorkoutModel item)
-        {
-            var _item = items.Where((WorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-            items.Add(item);
+        //public async Task<bool> UpdateItemAsync(WorkoutModel item)
+        //{
+        //    var _item = items.Where((WorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
+        //    items.Remove(_item);
+        //    items.Add(item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<bool> DeleteItemAsync(WorkoutModel item)
-        {
-            var _item = items.Where((WorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
+        //public async Task<bool> DeleteItemAsync(WorkoutModel item)
+        //{
+        //    var _item = items.Where((WorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
+        //    items.Remove(_item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<WorkoutModel> GetItemAsync(string id)
-        {
-            return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
-        }
+        //public async Task<WorkoutModel> GetItemAsync(string id)
+        //{
+        //    return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
+        //}
 
         public async Task<IEnumerable<WorkoutModel>> GetItemsAsync(bool forceRefresh = false)
         {
@@ -71,16 +71,6 @@ namespace MrelsApp.Services
         }
 
         public Task<IEnumerable<WorkoutModel>> GetItemsFromParentIdAsync(string parentId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Response> Put<T>(string urlBase, string servicePrefix, string controller, T model)
         {
             throw new NotImplementedException();
         }
@@ -247,8 +237,8 @@ namespace MrelsApp.Services
                     Description = "Pull down machine",
                     Cantidad = "20",
                     Sensor = "reps.",
-                    UrlVideo =
-                        "https://www.youtube.com/watch?v=ZbVNPTyVNTQ&index=12&list=PLBy4FXpRwvuX-UNN3dztZ1X2tApS_GDbX",
+                    UrlVideo = "http://skj-tech.com/music/pull-down.machine.mp4",
+                        //"https://www.youtube.com/watch?v=ZbVNPTyVNTQ",
                     ImageUri = "pull_down.jpg"
                 },
                 //new SubWorkoutModel
@@ -584,34 +574,34 @@ namespace MrelsApp.Services
             }
         }
 
-        public async Task<bool> AddItemAsync(SubWorkoutModel item)
-        {
-            items.Add(item);
+        //public async Task<bool> AddItemAsync(SubWorkoutModel item)
+        //{
+        //    items.Add(item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<bool> UpdateItemAsync(SubWorkoutModel item)
-        {
-            var _item = items.Where((SubWorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
-            items.Add(item);
+        //public async Task<bool> UpdateItemAsync(SubWorkoutModel item)
+        //{
+        //    var _item = items.Where((SubWorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
+        //    items.Remove(_item);
+        //    items.Add(item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<bool> DeleteItemAsync(SubWorkoutModel item)
-        {
-            var _item = items.Where((SubWorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
-            items.Remove(_item);
+        //public async Task<bool> DeleteItemAsync(SubWorkoutModel item)
+        //{
+        //    var _item = items.Where((SubWorkoutModel arg) => arg.Id == item.Id).FirstOrDefault();
+        //    items.Remove(_item);
 
-            return await Task.FromResult(true);
-        }
+        //    return await Task.FromResult(true);
+        //}
 
-        public async Task<SubWorkoutModel> GetItemAsync(string id)
-        {
-            return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
-        }
+        //public async Task<SubWorkoutModel> GetItemAsync(string id)
+        //{
+        //    return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
+        //}
 
         public async Task<IEnumerable<SubWorkoutModel>> GetItemsAsync(bool forceRefresh = false)
         {
@@ -623,15 +613,6 @@ namespace MrelsApp.Services
             return await Task.FromResult(items.Where(s => s.ParentId == parentId));
         }
 
-        public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Response> Put<T>(string urlBase, string servicePrefix, string controller, T model)
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public class MockTrainingPlanDataStore : IDataStore<TrainingPlanModel>
@@ -657,26 +638,6 @@ namespace MrelsApp.Services
             }
         }
 
-        public Task<bool> AddItemAsync(TrainingPlanModel item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> UpdateItemAsync(TrainingPlanModel item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> DeleteItemAsync(TrainingPlanModel item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<TrainingPlanModel> GetItemAsync(string id)
-        {
-            throw new NotImplementedException();
-        }
-
         public Task<IEnumerable<TrainingPlanModel>> GetItemsAsync(bool forceRefresh = false)
         {
             throw new NotImplementedException();
@@ -685,16 +646,6 @@ namespace MrelsApp.Services
         public async Task<IEnumerable<TrainingPlanModel>> GetItemsFromParentIdAsync(string id)
         {
             return await Task.FromResult(items.Where(s => s.Id == id));
-        }
-
-        public Task<List<T>> Get<T>(string urlBase, string servicePrefix, string controller)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Response> Put<T>(string urlBase, string servicePrefix, string controller, T model)
-        {
-            throw new NotImplementedException();
         }
     }
 }

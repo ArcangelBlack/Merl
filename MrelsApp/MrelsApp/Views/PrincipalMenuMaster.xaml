@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-    x:Class="MrelsApp.Views.B4CoachMasterMaster"
+    x:Class="MrelsApp.Views.PrincipalMenuMaster"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Title="Master" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<StackLayout BindingContext="{Binding Path=B4CoachMasterMasterVm}">
-			<ListView x:Name="MenuItemssListView"
+			<ListView x:Name="MenuItemsListView"
 				  SeparatorVisibility="Default"
 				  HasUnevenRows="true"
 				  ItemsSource="{Binding Path=MenuItems}">
@@ -43,8 +43,8 @@
 							Grid.Row="1"
 							Margin="0,5"
 							Text="Jastin Farias"
-							HorizontalOptions="Center"
-							Style="{DynamicResource ContentSubMenuStyle}"/>
+							HorizontalOptions="Center" FontSize="20"
+							Style="{DynamicResource SubtitleStyle}"/>
 					</Grid>
 				</ListView.Header>
 				<ListView.ItemTemplate>
@@ -59,7 +59,7 @@
 									<ColumnDefinition Width="*"/>
 								</Grid.ColumnDefinitions>
 								<Image WidthRequest="50" HeightRequest="50" Source="{Binding Path=Icon}"/>
-								<Label Grid.Column="1" Style="{StaticResource ContentSubMenuStyle}" Text="{Binding Path=Title}"/>
+								<Label Grid.Column="1" Style="{StaticResource MenuLabelStyle}" Text="{Binding Path=Title}"/>
 							</Grid>
 						</ViewCell>
 					</DataTemplate>

@@ -23,6 +23,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\PrincipalMenuMaster.xaml.cs">
+      <DependentUpon>PrincipalMenuMaster.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\HelpsViews\AboutPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -62,7 +65,7 @@
     <EmbeddedResource Update="Views\B4CoachMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\B4CoachMasterMaster.xaml">
+    <EmbeddedResource Update="Views\PrincipalMenuMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HelpsViews\ConfigurationPage.xaml">

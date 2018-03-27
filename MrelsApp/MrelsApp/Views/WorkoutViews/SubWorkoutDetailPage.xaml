@@ -5,7 +5,7 @@
     xmlns:forms="clr-namespace:InTheHand.Forms;assembly=InTheHand.Forms"
     x:Class="MrelsApp.Views.WorkoutViews.SubWorkoutDetailPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Push-up" BackgroundColor="{StaticResource BgBase}">
+    Title="Pull down machine" BackgroundColor="{StaticResource BgBase}"><!--Push-up-->
     <ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=SubWorkoutDetailVm}">
 			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" >
@@ -27,47 +27,26 @@
 				<forms:MediaElement 
 					Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
 					HorizontalOptions="StartAndExpand" BackgroundColor="{StaticResource BgBase}" VerticalOptions="StartAndExpand" HeightRequest="180" 
-				    x:Name="Media" IsLooping="True"  AreTransportControlsEnabled="true" 
+				    x:Name="MediaDetailPage" IsLooping="True"  AreTransportControlsEnabled="true" 
 				    Source="{Binding Path=ItemDetail.UrlVideo}"/>
 
-				<!--<WebView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Source="{Binding Path=ItemDetail.UrlVideo}"/>-->
 
-				<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="50" Text="20"/>
-				<Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="40" Text="REPS."/>
-
-				<!--<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition/>
-						<ColumnDefinition/>
-					</Grid.ColumnDefinitions>
-					<Grid.RowDefinitions>
-						<RowDefinition/>
-						<RowDefinition/>
-					</Grid.RowDefinitions>
-					
-					<Label HorizontalOptions="Center" FontSize="50" Text="6"/>
-					<Label Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" FontSize="Medium" TextColor="#3498DB" Text="KG"/>
-
-					<Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" FontSize="50" Text="10"/>
-					<Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Medium" TextColor="#3498DB" Text="REP"/>
-				</Grid>-->
+				<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" FontSize="50" Text="20"/>
+				<Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" FontSize="30" Text="REPS."/>
 
 				<Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition/>
 						<ColumnDefinition/>
 					</Grid.ColumnDefinitions>
-					<!--<Grid.RowDefinitions>
-						<RowDefinition/>
-						<RowDefinition/>
-					</Grid.RowDefinitions>-->
+					<!--<Button x:Name="BtnPause" Grid.Row="0" Grid.Column="0" Style="{StaticResource SecondaryButton}" Text="Pause" Command="{Binding Path=PauseCommand}"/>
+					<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>-->
 
-					<Button x:Name="BtnPause" Grid.Row="0" Grid.Column="0" Style="{StaticResource SecondaryButton}" Text="Pause" Command="{Binding Path=PauseCommand}"/>
-					<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>
-					<!--<Button x:Name="BtnEndWorkout" Grid.Row="1" Grid.Column="1" Style="{StaticResource SecondaryButton}" Text="Next" Command="{Binding Path=NextCommand}"/>-->
+					<Button x:Name="BtnEndWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="End" Command="{Binding Path=NextCommand}"/>
+
 				</Grid>
 
-				<Frame Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
+				<!--<Frame Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
 					<Grid>
 						<Grid.Padding>
 							<OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>
@@ -86,9 +65,9 @@
 							<abstractions:CircleImage.HeightRequest>
 								<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
 							</abstractions:CircleImage.HeightRequest>
-							<!--<controls:CircleImage.Source>
+							--><!--<controls:CircleImage.Source>
 										<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
-									</controls:CircleImage.Source>-->
+									</controls:CircleImage.Source>--><!--
 						</abstractions:CircleImage>
 						<StackLayout Grid.Column="1"
 					                         Padding="8"
@@ -99,19 +78,13 @@
 								<Grid.ColumnDefinitions>
 									<ColumnDefinition Width="Auto"/>
 									<ColumnDefinition/>
-									<!--<ColumnDefinition Width="Auto"/>
-											<ColumnDefinition/>-->
 								</Grid.ColumnDefinitions>
-								<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
 								<Label Grid.Column="0" Text="20" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
 								<Label Grid.Column="1" Text="reps." TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
-
-								<!--<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
-										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>-->
 							</Grid>
 						</StackLayout>
 					</Grid>
-				</Frame>
+				</Frame>-->
 
 			</Grid>
 		</ScrollView>

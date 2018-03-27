@@ -18,29 +18,8 @@
 				<ColumnDefinition Width=".1*"/>
 				<ColumnDefinition Width=".4*"/>
 			</Grid.ColumnDefinitions>
-			<!--<controls:CircleImage 
-					Grid.ColumnSpan="3"
-					HeightRequest="150"
-					WidthRequest="150"
-					HorizontalOptions="CenterAndExpand"
-					VerticalOptions ="CenterAndExpand"
-					BorderColor="#3498DB" 
-					BorderThickness="4">
-				<controls:CircleImage.Source>
-					<UriImageSource 
-						Uri="{Binding Path=ItemDetail.ImageUri}"
-						                CacheValidity="14" 
-						                CachingEnabled="true"/>
-				</controls:CircleImage.Source>
-			</controls:CircleImage>-->
-			<!--<Label
-					Grid.Row="1"
-					Grid.ColumnSpan="3" Grid.Column="0"
-					FontSize="Small"
-					Text="{Binding Path=ItemDetail.Text}"
-					HorizontalOptions="Center"/>-->
 
-			<Label Style="{StaticResource ContentSubMenuStyle}" Margin="10,0" Text="Día 1"/>
+			<Label Style="{StaticResource SubtitleLabelStyle}" Margin="10,0" Text="Día 1"/>
 
 			<ListView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
 				ItemsSource="{Binding Path=SubWorkoutList, Mode=TwoWay}"
@@ -53,62 +32,66 @@
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<Grid>
-								<Grid.GestureRecognizers>
-									<TapGestureRecognizer Command="{Binding Path=SelectSubWorkoutCommand}"/>
-								</Grid.GestureRecognizers>
-								<Grid.Padding>
-									<OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>
-								</Grid.Padding>
-								<Grid.ColumnDefinitions>
-									<ColumnDefinition Width="Auto"/>
-									<ColumnDefinition Width="*"/>
-								</Grid.ColumnDefinitions>
-								<controls:CircleImage VerticalOptions="Center"
-					                                  BorderColor="#3498DB"
-					                                  BorderThickness="2"
-					                                  Aspect="AspectFill" Source="{Binding Path=ImageUri}">
-									<controls:CircleImage.WidthRequest>
-										<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
-									</controls:CircleImage.WidthRequest>
-									<controls:CircleImage.HeightRequest>
-										<OnPlatform x:TypeArguments="x:Double" iOS="55" Android="55" WinPhone="75"/>
-									</controls:CircleImage.HeightRequest>
-									<!--<controls:CircleImage.Source>
-										<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
-									</controls:CircleImage.Source>-->
-								</controls:CircleImage>
-								<StackLayout Grid.Column="1"
-					                         Padding="8"
-					                         Spacing="4"
-					                         VerticalOptions="Center">
-									<Label Text="{Binding Path=Description}" FontSize="Medium"  Style="{StaticResource ContentSubMenuStyle}" LineBreakMode="NoWrap"/>
-									<Grid HorizontalOptions="StartAndExpand">
-										<Grid.ColumnDefinitions>
-											<ColumnDefinition Width="Auto"/>
-											<ColumnDefinition/>
-											<!--<ColumnDefinition Width="Auto"/>
-											<ColumnDefinition/>-->
-										</Grid.ColumnDefinitions>
-										<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
-										<Label Grid.Column="0" Text="{Binding Path=Cantidad}" VerticalOptions="Center" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
-										<Label Grid.Column="1" Text="{Binding Path=Sensor}" VerticalOptions="Center" TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
+							<Frame CornerRadius="20" HasShadow="True" Margin="5">
+								<Grid>
+									<Grid.GestureRecognizers>
+										<TapGestureRecognizer Command="{Binding Path=SelectSubWorkoutCommand}"/>
+									</Grid.GestureRecognizers>
+									<Grid.Padding>
+										<OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>
+									</Grid.Padding>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto"/>
+										<ColumnDefinition Width="*"/>
+									</Grid.ColumnDefinitions>
+									<controls:CircleImage VerticalOptions="Center"
+														  BorderColor="#3498DB"
+														  BorderThickness="2"
+														  Aspect="AspectFill" Source="{Binding Path=ImageUri}">
+										<controls:CircleImage.WidthRequest>
+											<OnPlatform x:TypeArguments="x:Double" iOS="70" Android="70" WinPhone="70"/>
+										</controls:CircleImage.WidthRequest>
+										<controls:CircleImage.HeightRequest>
+											<OnPlatform x:TypeArguments="x:Double" iOS="70" Android="70" WinPhone="70"/>
+										</controls:CircleImage.HeightRequest>
+										<!--<controls:CircleImage.Source>
+											<UriImageSource Uri="{Binding Path=ImageUri}" CacheValidity="14" CachingEnabled="true"/>
+										</controls:CircleImage.Source>-->
+									</controls:CircleImage>
+									<StackLayout Grid.Column="1"
+												 Padding="8"
+												 Spacing="4"
+												 VerticalOptions="Center">
+										<Label Text="{Binding Path=Description}" FontSize="26"  Style="{StaticResource ContentLabelStyle}" LineBreakMode="NoWrap"/>
+										<Grid HorizontalOptions="StartAndExpand">
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="Auto"/>
+												<ColumnDefinition/>
+												<!--<ColumnDefinition Width="Auto"/>
+												<ColumnDefinition/>-->
+											</Grid.ColumnDefinitions>
+											<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
+											<Label Grid.Column="0" Text="{Binding Path=Cantidad}" Style="{StaticResource ContentLabelStyle}" FontAttributes="Bold" LineBreakMode="WordWrap"/>
+											<Label Grid.Column="1" Text="{Binding Path=Sensor}" Style="{StaticResource InfoContentLabelStyle}" TextColor="#3498DB" LineBreakMode="WordWrap"/>
 
-									</Grid>
-								</StackLayout>
-							</Grid>
+										</Grid>
+									</StackLayout>
+								</Grid>
+							</Frame>
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
 
-			<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
+			<!--<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition/>
 					<ColumnDefinition/>
 				</Grid.ColumnDefinitions>
 				<Button x:Name="BtnNextWorkout" Grid.Row="0" Grid.Column="1" Style="{StaticResource PrimaryButton}" Text="Start"/>
-			</Grid>
+			</Grid>-->
+
+			<Button x:Name="BtnNextWorkout" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"  BorderWidth = "20" Style="{StaticResource PrimaryButton}" Text="Start" />
 
 		</Grid>
 	</ContentPage.Content>

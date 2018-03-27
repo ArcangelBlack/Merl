@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace MrelsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class B4CoachMasterMaster : ContentPage
+    public partial class PrincipalMenuMaster : ContentPage
     {
-        public B4CoachMasterMaster()
+        public PrincipalMenuMaster()
         {
             InitializeComponent();
         }

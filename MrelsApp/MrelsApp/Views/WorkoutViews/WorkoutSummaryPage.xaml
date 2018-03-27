@@ -6,7 +6,7 @@
 	Title="Workout Summary" BackgroundColor="{StaticResource BgBase}">
 	<ContentPage.Content>
 		<ScrollView BindingContext="{Binding Path=WorkoutSummaryVm}">
-			<Grid Margin="10,10,10,0">
+			<Grid Margin="10,10,10,0" RowSpacing="0" ColumnSpacing="10">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="Auto"/>
 					<ColumnDefinition Width="Auto"/>
@@ -15,15 +15,15 @@
 				<Grid.RowDefinitions>
 					<RowDefinition Height="50"/>
 					<RowDefinition Height="Auto"/>
-					<RowDefinition Height="70"/>
-					<RowDefinition Height="70"/>
-					<RowDefinition Height="70"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
 					<RowDefinition Height="70"/>
 					<RowDefinition/>
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 
-				<Label Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="Nice job, your done!"/>
+				<Label Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource SubtitleLabelStyle}" Text="Nice job, your done!"/>
 
 				<Image
 					Grid.Row="1"
@@ -37,20 +37,20 @@
 					HeightRequest="180"/>
 
 				<Image Grid.Row="2" Grid.Column="0" WidthRequest="80" HeightRequest="80" VerticalOptions="FillAndExpand" Source="ic_favorite"/>
-				<Label Grid.Row="2" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="600"/>
-				<Label Grid.Row="2" Grid.Column="2" Style="{StaticResource ContentStyle}" FontSize="18" Text="calories burnt"/>
+				<Label Grid.Row="2" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" Text="600"/>
+				<Label Grid.Row="2" Grid.Column="2" Style="{StaticResource InfoContentLabelStyle}" Text="calories burnt"/>
 
 				<Image Grid.Row="3" Grid.Column="0" WidthRequest="80" HeightRequest="80" VerticalOptions="Center" Source="ic_directions_walk"/>
-				<Label Grid.Row="3" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="3,4"/>
-				<Label Grid.Row="3" Grid.Column="2" Style="{StaticResource ContentStyle}" FontSize="18" Text="km run"/>
+				<Label Grid.Row="3" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" Text="3,4"/>
+				<Label Grid.Row="3" Grid.Column="2" Style="{StaticResource InfoContentLabelStyle}" Text="km run"/>
 
 				<Image Grid.Row="4" Grid.Column="0" WidthRequest="70" HeightRequest="70" VerticalOptions="Center" Source="ic_timer"/>
-				<Label Grid.Row="4" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="60"/>
-				<Label Grid.Row="4" Grid.Column="2" Style="{StaticResource ContentStyle}" FontSize="18" Text="minutes"/>
+				<Label Grid.Row="4" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" Text="60"/>
+				<Label Grid.Row="4" Grid.Column="2" Style="{StaticResource InfoContentLabelStyle}" Text="minutes"/>
 
 				<Image Grid.Row="5" Grid.Column="0" WidthRequest="70" HeightRequest="70" VerticalOptions="Center" Source="ic_logo"/>
-				<Label Grid.Row="5" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" Text="60"/>
-				<Label Grid.Row="5" Grid.Column="2" Style="{StaticResource ContentStyle}" FontSize="18" Text="Kg lifted weight"/>
+				<Label Grid.Row="5" Grid.Column="1" FontSize="23" HorizontalOptions="Center" Style="{StaticResource ContentLabelStyle}" Text="60"/>
+				<Label Grid.Row="5" Grid.Column="2" Style="{StaticResource InfoContentLabelStyle}" Text="Kg lifted weight"/>
 
 				<Grid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3">
 					<Grid.ColumnDefinitions>

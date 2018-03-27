@@ -29,7 +29,7 @@
 				VerticalOptions ="Center"
 			    BorderColor="#3498DB"
 			    BorderThickness="10"
-			    Source="logo_bg.png">
+			    Source="logo_chart.png">
 				<abstractions:CircleImage.WidthRequest>
 					<OnPlatform x:TypeArguments="x:Double" iOS="250" Android="250" WinPhone="250"/>
 				</abstractions:CircleImage.WidthRequest>
@@ -41,18 +41,7 @@
 				</abstractions:CircleImage.Source>-->
 			</abstractions:CircleImage>
 
-			<!--<Image
-				Grid.Row="1"
-				Grid.Column="1"
-				Source="logo.png"
-				Aspect="AspectFill"
-				HorizontalOptions="Center"
-				VerticalOptions="Center"
-				WidthRequest="200"
-				HeightRequest="200"/>-->
-
-
-			<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource ContentSubMenuStyle}" FontSize="50" Text="14 s"/>
+			<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" Style="{StaticResource SubtitleLabelStyle}" FontSize="50" Text="14 s"/>
 
 			<Frame Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
 				<Grid>
@@ -81,7 +70,7 @@
 					                         Padding="8"
 					                         Spacing="4"
 					                         VerticalOptions="Center">
-						<Label Text="Pull down machine" FontSize="Medium"  Style="{StaticResource ContentSubMenuStyle}" LineBreakMode="NoWrap"/>
+						<Label Text="Pull down machine" FontSize="Medium"  Style="{StaticResource ContentLabelStyle}" LineBreakMode="NoWrap"/>
 						<Grid HorizontalOptions="StartAndExpand">
 							<Grid.ColumnDefinitions>
 								<ColumnDefinition Width="Auto"/>
@@ -90,8 +79,8 @@
 											<ColumnDefinition/>-->
 							</Grid.ColumnDefinitions>
 							<!--<Label Text="Range:" FontSize="Small" LineBreakMode="WordWrap"/>-->
-							<Label Grid.Column="0" Text="20" FontSize="Small" FontAttributes="Bold" LineBreakMode="WordWrap"/>
-							<Label Grid.Column="1" Text="reps." TextColor="#3498DB" FontSize="Small" LineBreakMode="WordWrap"/>
+							<Label Grid.Column="0" Style="{StaticResource ContentLabelStyle}" Text="20" LineBreakMode="WordWrap"/>
+							<Label Grid.Column="1" Style="{StaticResource InfoContentLabelStyle}" Text="reps." TextColor="#3498DB" LineBreakMode="WordWrap"/>
 
 							<!--<Label Grid.Column="2" Text="Sensor:" FontSize="Small" LineBreakMode="WordWrap"/>
 										<Label Grid.Column="3" Text="{Binding Path=Sensor}" FontSize="Small" LineBreakMode="WordWrap"/>-->

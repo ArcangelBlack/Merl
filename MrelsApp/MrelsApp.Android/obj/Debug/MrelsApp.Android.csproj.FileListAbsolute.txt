@@ -299,6 +299,7 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\isometrico_lateral.jpg
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\pull_down.jpg
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\pushups.jpg
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\res\drawable\logo_chart.png
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\R.cs.flag
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\uploadflags.txt
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
@@ -415,7 +416,6 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\bin\Debug\MrelsApp.Android.dll
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.pdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\MrelsApp.Android.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp.Android\obj\Debug\linksrc\ImageCircle.Forms.Plugin.Android.dll.mdb

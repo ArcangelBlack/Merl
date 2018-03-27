@@ -8,6 +8,7 @@
 			<Grid.RowDefinitions>
 				<RowDefinition Height="300"/>
 				<RowDefinition Height="50"/>
+				<RowDefinition Height="10"/>
 				<RowDefinition Height="50"/>
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
@@ -32,12 +33,11 @@
 				WidthRequest="200"
 				Style="{StaticResource PrimaryButton}"
 				Text="Sign in"
-				BorderRadius="23"
 				Command="{Binding Path=LoginCommand}"/>
 
 			<Button 
 				x:Name="BtnRegister"
-				Grid.Row="2" Grid.Column="1"
+				Grid.Row="3" Grid.Column="1"
 				HorizontalOptions="Center"
 				WidthRequest="200"
 				Style="{StaticResource SecondaryButton}"

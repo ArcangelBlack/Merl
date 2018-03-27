@@ -1,4 +1,8 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Windows.Input;
+using MrelsApp.Models;
 using MrelsApp.Services;
 using MrelsApp.Utils;
 using Plugin.Media;
@@ -19,6 +23,10 @@ namespace MrelsApp.ViewModels.MainViewModels
 
         private MediaFile file;
 
+        private ObservableCollection<TrainingPlanModel> trainingPlanList;
+
+        private TrainingPlanModel selectTrainingPlan;
+
         #endregion
 
         #region Constructor
@@ -26,7 +34,12 @@ namespace MrelsApp.ViewModels.MainViewModels
         public RegisterViewModel()
         {
             this.displayAlertService = new DisplayAlertService();
-            //this.ImageSource = "no_image";
+            //this.ImageSource = "no_image";+
+
+            this.BirthdayDate = System.DateTime.Now;
+
+            this.TrainingPlanList = new ObservableCollection<TrainingPlanModel>();
+            this.LoadTrainingPlans();
         }
 
         #endregion
@@ -52,7 +65,7 @@ namespace MrelsApp.ViewModels.MainViewModels
 
         public string Telephone { get; set; }
 
-        //public string BirthdayDate { get; set; }
+        public DateTime BirthdayDate { get; set; }
 
         public string Password { get; set; }
 
@@ -67,11 +80,22 @@ namespace MrelsApp.ViewModels.MainViewModels
         //public FacebookViewModel FacebookVm { get; set; }
 
         //public TwitterViewModel TwitterVm { get; set; }
-        
+
         //public YouTubeViewModel YouTubeVm { get; set; }
 
         //public InstagramViewModel InstagramVm { get; set; }
 
+        public ObservableCollection<TrainingPlanModel> TrainingPlanList
+        {
+            get => this.trainingPlanList;
+            set => this.SetProperty(ref this.trainingPlanList, value);
+        }
+
+        public TrainingPlanModel SelectTrainingPlan
+        {
+            get => this.selectTrainingPlan;
+            set => this.SetProperty(ref this.selectTrainingPlan, value);
+        }
         #endregion
 
         #region Commands
@@ -143,6 +167,42 @@ namespace MrelsApp.ViewModels.MainViewModels
                     var stream = file.GetStream();
                     return stream;
                 });
+            }
+        }
+
+        private async void LoadTrainingPlans()
+        {
+            if (this.IsBusy)
+                return;
+
+            this.IsBusy = true;
+
+            try
+            {
+                this.TrainingPlanList.Clear();
+
+                var itemsTmp = new ObservableCollection<TrainingPlanModel>();
+
+                var itemsResult = await DataStore.GetItemsAsync(true);
+                foreach (var item in itemsResult)
+                {
+                    var newItem = new TrainingPlanModel
+                    {
+                        Id = item.Id,
+                        Description = item.Text
+                    };
+                    itemsTmp.Add(newItem);
+                }
+
+                this.TrainingPlanList = itemsTmp;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                this.IsBusy = false;
             }
         }
 

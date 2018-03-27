@@ -44,7 +44,7 @@
 									<OnPlatform x:TypeArguments="x:Double" iOS="104" Android="104" WinPhone="104"/>
 								</controls:CircleImage.HeightRequest>
 							</controls:CircleImage>
-							<Button IsVisible="{Binding CanSave}" Text="Change Photo" Style="{StaticResource nakedButton}" FontSize="12" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent" TextColor="#303030" />
+							<Button IsVisible="{Binding CanSave}" Text="Change Photo" Style="{StaticResource NakedButton}" FontSize="12" BorderColor="Transparent" BorderWidth="0" BackgroundColor="Transparent" TextColor="#303030" />
 						</StackLayout>
 						<StackLayout CompressedLayout.IsHeadless="true" Spacing="10" HorizontalOptions="FillAndExpand" Orientation="Vertical">
 							<Entry IsVisible="{Binding Path=IsLoggedIn, Converter={StaticResource InvertedBoolConverter}}" HorizontalOptions="FillAndExpand" Placeholder="Username" Text="{Binding Username}" x:Name="UsernameEntry" />
