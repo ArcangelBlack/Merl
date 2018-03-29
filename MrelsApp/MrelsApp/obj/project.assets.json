@@ -77,6 +77,17 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.BLE/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.Abstractions.dll": {},
+          "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.Abstractions.dll": {},
+          "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.dll": {}
+        }
+      },
       "Plugin.Permissions/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -608,6 +619,35 @@
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "Plugin.BLE/1.3.0": {
+      "sha512": "5sD/YwTADSWES04iY28+Wc2alvq5kdPeH24oZuQxNiDTL0eAyxioJWdQ0JuKH6GyWNd9Zmv5006sgYcbNVwSwQ==",
+      "type": "package",
+      "path": "plugin.ble/1.3.0",
+      "files": [
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.XML",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll.mdb",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
+        "lib/MonoAndroid/Plugin.BLE.XML",
+        "lib/MonoAndroid/Plugin.BLE.dll",
+        "lib/MonoAndroid/Plugin.BLE.dll.mdb",
+        "lib/MonoAndroid/Plugin.BLE.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.XML",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.XML",
+        "lib/Xamarin.iOS10/Plugin.BLE.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.Abstractions.XML",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.Abstractions.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.Abstractions.pdb",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.XML",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Plugin.BLE.pdb",
+        "plugin.ble.1.3.0.nupkg.sha512",
+        "plugin.ble.nuspec"
       ]
     },
     "Plugin.Permissions/2.2.1": {
@@ -1196,6 +1236,7 @@
       "InTheHand.Forms >= 1.0.2018.111",
       "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 8.0.3",
+      "Plugin.BLE >= 1.3.0",
       "Plugin.Youtube >= 1.0.1",
       "SQLiteNetExtensions >= 1.3.0",
       "Xam.Plugin.Connectivity >= 2.2.12",
@@ -1265,6 +1306,10 @@
             "target": "Package",
             "version": "[8.0.3, )"
           },
+          "Plugin.BLE": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
           "Plugin.Youtube": {
             "target": "Package",
             "version": "[1.0.1, )"
@@ -1333,6 +1378,16 @@
       "warningLevel": 1,
       "message": "Package 'Newtonsoft.Json 8.0.3' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Plugin.BLE 1.3.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Plugin.BLE",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]

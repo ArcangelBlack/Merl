@@ -28,10 +28,16 @@
     <!-- colorPrimaryDark is used for the status bar 1976D2 Azul-->
     <item name="colorPrimaryDark">#fbfbd0</item>
     <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets FF4081 verde-->
-    <item name="colorAccent">#fbfbd0</item>
-    <!-- You can also set colorControlNormal, colorControlActivated
-         colorControlHighlight and colorSwitchThumbNormal. -->
+         which is used to tint widgets 14d281 verde-->
+    <!--Controles como switch / Reproductor / TextBox-->
+    <item name="colorAccent">#14d281</item>
+    <!-- You can also set colorControlNormal, colorControlActivated  colorControlHighlight and colorSwitchThumbNormal. -->
+
+    <!--Controles como el scroll-->
+    <item name="colorControlNormal">#1976d2</item>
+
+    <item name="colorButtonNormal">#d27619</item>
+
     <item name="windowActionModeOverlay">true</item>
 
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>

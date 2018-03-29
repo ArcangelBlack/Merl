@@ -41,7 +41,6 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.CustomControls.ConnectSocialButtonControl.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.CustomControls.StrengthIndicatorsControl.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.B4CoachMaster.xaml.g.cs
-C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.B4CoachMasterMaster.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.ConditionTestViews.ConditionTestPage.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.HelpsViews.AboutPage.xaml.g.cs
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.HelpsViews.ChatBoxPage.xaml.g.cs
@@ -69,3 +68,6 @@ C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\M
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\en\MrelsApp.resources.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.dll
 C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.pdb
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.PrincipalMenuMaster.xaml.g.cs
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.HelpsViews.ScannerPage.xaml.g.cs
+C:\Users\ccumpa\Documents\Personales\Proyectos\Mrels\srcApp\AppMobile\MrelsApp\MrelsApp\obj\Debug\netstandard2.0\MrelsApp.Views.HelpsViews.InformationDevicePage.xaml.g.cs

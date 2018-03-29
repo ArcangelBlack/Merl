@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using MrelsApp.UWP.Services;
 
 namespace MrelsApp.UWP
 {
@@ -53,6 +54,9 @@ namespace MrelsApp.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+
+                // register the dependencies in the same
+                Xamarin.Forms.DependencyService.Register<DeviceConfig>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

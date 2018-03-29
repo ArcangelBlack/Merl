@@ -6,15 +6,15 @@
 	<ContentPage.Content>
 		<Grid RowSpacing="0" ColumnSpacing="0" BindingContext="{Binding Path=InitVm}">
 			<Grid.RowDefinitions>
-				<RowDefinition Height="300"/>
-				<RowDefinition Height="50"/>
-				<RowDefinition Height="10"/>
-				<RowDefinition Height="50"/>
+				<RowDefinition Height="300" />
+				<RowDefinition Height="50" />
+				<RowDefinition Height="10" />
+				<RowDefinition Height="50" />
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition/>
-				<ColumnDefinition Width="Auto"/>
-				<ColumnDefinition/>
+				<ColumnDefinition />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition />
 			</Grid.ColumnDefinitions>
 
 			<Image
@@ -24,47 +24,50 @@
 				HorizontalOptions="Center"
 				VerticalOptions="Center"
 				WidthRequest="200"
-				HeightRequest="200"/>
+				HeightRequest="200" />
 
-			<Button 
+			<Button
 				x:Name="BtnLogin"
 				Grid.Row="1" Grid.Column="1"
 				HorizontalOptions="Center"
 				WidthRequest="200"
 				Style="{StaticResource PrimaryButton}"
 				Text="Sign in"
-				Command="{Binding Path=LoginCommand}"/>
+				Command="{Binding Path=LoginCommand}" />
 
-			<Button 
+			<Button
 				x:Name="BtnRegister"
 				Grid.Row="3" Grid.Column="1"
 				HorizontalOptions="Center"
 				WidthRequest="200"
 				Style="{StaticResource SecondaryButton}"
 				Text="Sign up"
-				Command="{Binding Path=RegisterCommand}"/>
+				Command="{Binding Path=RegisterCommand}" />
 		</Grid>
 		<!--<StackLayout>
-			--><!--<Label Text="Regístrate ahora"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" FontSize="24"/>--><!--
+			-->
+		<!--<Label Text="Regístrate ahora"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" FontSize="24" />-->
+		<!--
 
-			<Image Source="logo.png"  HorizontalOptions="Center" WidthRequest="300"/>
+			<Image Source="logo.png"  HorizontalOptions="Center" WidthRequest="300" />
 
-			--><!--<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Facebook" TextColor="White" FontAttributes="Bold" FontSize="20" 
-			        HorizontalOptions="FillAndExpand" BackgroundColor="#3b5998"/>
+			-->
+		<!--<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Facebook" TextColor="White" FontAttributes="Bold" FontSize="20"
+			        HorizontalOptions="FillAndExpand" BackgroundColor="#3b5998" />
 
-			<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Google" TextColor="White" FontAttributes="Bold" FontSize="20" 
-			        HorizontalOptions="FillAndExpand" BackgroundColor="#d34836"/>--><!--
+			<Button Command="{Binding Path=SubmitCommand}" Text="Entrar con Google" TextColor="White" FontAttributes="Bold" FontSize="20"
+			        HorizontalOptions="FillAndExpand" BackgroundColor="#d34836" />-->
+		<!--
 
 			<StackLayout Orientation="Horizontal" Padding="20" Spacing="30">
 
-				<Button Command="{Binding Path=SubmitCommand}" Text="Sign in" TextColor="White" FontAttributes="Bold" FontSize="20" 
-				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
+				<Button Command="{Binding Path=SubmitCommand}" Text="Sign in" TextColor="White" FontAttributes="Bold" FontSize="20"
+				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131" />
 
-				<Button Command="{Binding Path=SubmitCommand}" Text="Sign up" TextColor="White" FontAttributes="Bold" FontSize="20" 
-				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131"/>
-
+				<Button Command="{Binding Path=SubmitCommand}" Text="Sign up" TextColor="White" FontAttributes="Bold" FontSize="20"
+				        HorizontalOptions="FillAndExpand" BackgroundColor="#F49131" />
 			</StackLayout>
 		</StackLayout>-->
 	</ContentPage.Content>

@@ -1,4 +1,7 @@
 ﻿using System.Threading.Tasks;
+using MrelsApp.ViewModels;
+using MrelsApp.ViewModels.HelpViewModels;
+using MrelsApp.ViewModels.WorkoutViewModels;
 using MrelsApp.Views;
 using MrelsApp.Views.HelpsViews;
 using MrelsApp.Views.UserViews;
@@ -43,12 +46,13 @@ namespace MrelsApp.Services
                     break;
                 case "FeedBackPage":
                     {
-                        await App.Navigator.PushAsync(new FeedBackPage());
+                        //await App.Navigator.PushAsync(new FeedBackPage());
                     }
                     break;
                 case "ConfigurationPage":
                     {
-                        await App.Navigator.PushAsync(new ConfigurationPage());
+                        MainViewModel.GetInstanceMainViewModel().ScannerVm = new ScannerViewModel();
+                        await App.Navigator.PushAsync(new ScannerPage());
                     }
                     break;
                 case "LoginPage":

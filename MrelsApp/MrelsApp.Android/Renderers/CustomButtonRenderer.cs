@@ -10,11 +10,11 @@
 //------------------------------------------------------------------------------
 
 using Android.Content;
-using MrelsApp.Droid;
+using MrelsApp.Droid.Renderers;
 using Xamarin.Forms;
 
 [assembly: ExportRenderer(typeof(Button), typeof(CustomButtonRenderer))]
-namespace MrelsApp.Droid
+namespace MrelsApp.Droid.Renderers
 {
     class CustomButtonRenderer : Xamarin.Forms.Platform.Android.ButtonRenderer
     {

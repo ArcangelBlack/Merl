@@ -32,6 +32,7 @@ namespace MrelsApp.ViewModels.WorkoutViewModels
         }
 
         #region Properties
+
         public ObservableCollection<WorkoutOverviewItemViewModel> Items
         {
             get => items;

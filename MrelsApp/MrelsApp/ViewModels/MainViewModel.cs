@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using MrelsApp.Models;
+using MrelsApp.ViewModels.HelpViewModels;
 using MrelsApp.ViewModels.MainViewModels;
 using MrelsApp.ViewModels.UserViewModels;
 using MrelsApp.ViewModels.WorkoutViewModels;
@@ -41,6 +42,8 @@ namespace MrelsApp.ViewModels
         public BreakViewModel BreakVm { get; set; }
 
         public FeelViewModel FeelVm { get; set; }
+
+        public ScannerViewModel ScannerVm { get; set; }
 
         #endregion
 
